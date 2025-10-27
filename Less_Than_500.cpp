@@ -29,3 +29,33 @@ int main(){
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+// 🟢 Problem 213: Lucky Seven
+// Chef considers the number 7 lucky. The 7th letter he sees in a day is his lucky letter.
+// Given a string S of length 10 (the first 10 letters Chef saw today), find the 7th character.
+
+// Input: A string S of length 10, containing only lowercase letters (a-z)
+// Output: Print the 7th character of S (1-based index: position 7)
+
+// Logic:
+// Since string length is exactly 10, access the character at index 6 (0-based indexing)
+// → S[6] is the 7th character → output it directly.
+
+// Examples:
+// Input: proceeding → Output: d    (7th char = 'd')
+// Input: outofsight → Output: i    (7th char = 'i')
+
+#include <iostream>
+using namespace std;
+    
+int main() {
+    string S;
+    cin >> S;
+
+    cout << S[6];
+      
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
