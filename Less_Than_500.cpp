@@ -89,3 +89,33 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+// 🟢 Problem 234: Double Rent
+// Chef was paying X rupees as rent. When Chefina moves in, the rent doubles.
+// Find the final rent Chef has to pay.
+
+// Input: One integer X (1 ≤ X ≤ 10)
+// Output: Print 2 * X (the new rent)
+
+// Logic:
+// New rent = 2 × Initial rent
+// → Final rent = 2 * X
+
+// Examples:
+// Input: 2  → Output: 4   (2 × 2 = 4)
+// Input: 3  → Output: 6   (2 × 3 = 6)
+// Input: 10 → Output: 20  (2 × 10 = 20)
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int X;
+    cin >> X;
+    
+    cout << 2 * X;
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
