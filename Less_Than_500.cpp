@@ -59,3 +59,33 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+// 🟢 Problem 233: Clear Day
+// A week has 7 days. Chef records X rainy days and Y cloudy days.
+// Find the number of clear days in the week.
+
+// Input: Two integers X and Y (0 ≤ X, Y ≤ 7 and X + Y ≤ 7)
+// Output: Number of clear days = 7 - X - Y
+
+// Logic:
+// Total days = 7
+// Clear days = Total days - Rainy days - Cloudy days
+// → Clear days = 7 - X - Y
+
+// Examples:
+// Input: 2 3 → Output: 2    (7 - 2 - 3 = 2 clear days)
+// Input: 3 4 → Output: 0    (7 - 3 - 4 = 0 clear days)
+
+#include <iostream>
+using namespace std;
+    
+int main() {
+    int X, Y;
+    cin >> X >> Y;
+
+    cout << 7 - (X + Y); // 7 - X - Y :- In math (and programming), subtraction works left to right because it’s left-associative meaning (7 - X) - Y
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
