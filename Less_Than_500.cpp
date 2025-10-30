@@ -162,3 +162,46 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+// 🟢 Problem 255: Masterchef Finals
+// Only the top 10 contestants qualify for the finals.
+// Given Chef's rank X, determine if he made it to the top 10 or not.
+
+// Input:
+// First line: T (1 ≤ T ≤ 100) — test cases
+// Next, T lines: One integer X (1 ≤ X ≤ 100) — Chef's current rank
+// Output: For each test case, print "YES" if X ≤ 10, otherwise "NO" (case-insensitive)
+
+// Logic:
+// Chef qualifies if rank X ≤ 10
+// → If X <= 10 → "YES"
+// → Else → "NO"
+
+// Examples:
+// Input: 15 → Output: NO   (15 > 10 → does not qualify)
+// Input: 10 → Output: YES  (10 ≤ 10 → qualifies)
+// Input: 1  → Output: YES  (1 ≤ 10 → qualifies)
+// Input: 50 → Output: NO   (50 > 10 → does not qualify)
+
+#include <iostream>
+using namespace std;
+    
+int main() {
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int X;
+        cin >> X;
+
+        if(X <= 10)
+            cout << "Yes" << endl;
+        else
+            cout << "No" << endl;
+    }
+    
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
