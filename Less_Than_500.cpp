@@ -119,3 +119,46 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+// 🟢 Problem 252: Saving Taxes
+// In Chefland, if you earn strictly more than Y rupees, you pay tax.
+// You can invest any amount to reduce your taxable income.
+// Given X (earned) and Y (tax threshold), with X > Y,
+// find the minimum amount to invest so taxable income ≤ Y.
+
+// Input:
+// First line: T (1 ≤ T ≤ 100) — test cases
+// Next, T lines: Two integers X and Y (1 ≤ Y < X ≤ 100)
+// Output: For each test case, print the minimum amount to invest.
+
+// Logic:
+// Taxable income after investment = X - investment
+// We need: X - investment ≤ Y
+// → investment ≥ X - Y
+// Since investment must be an integer, minimum is X - Y.
+
+// Examples:
+// Input: 4 2 → Output: 2   (4 - 2 = 2 ≤ 2 → no tax)
+// Input: 8 7 → Output: 1   (8 - 1 = 7 ≤ 7 → no tax)
+// Input: 5 1 → Output: 4   (5 - 4 = 1 ≤ 1 → no tax)
+// Input: 2 1 → Output: 1   (2 - 1 = 1 ≤ 1 → no tax)
+
+#include <iostream>
+using namespace std;
+    
+int main() {
+    int T;
+    cin >> T;
+
+    while(T--) { // we can add if(X > Y) cout << X - Y;
+        int X, Y;
+        cin >> X >> Y;
+
+        cout << X - Y << endl;
+    }
+    
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
