@@ -285,3 +285,43 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+// 🟢 Problem 267: Determine the Score
+// A problem is worth X points and has exactly 10 test cases.
+// Each test case is worth the same number of points.
+// Chef passes N test cases. Find Chef's score.
+
+// Input:
+// First line: T (1 ≤ T ≤ 100)
+// Next T lines: Two integers X and N (10 ≤ X ≤ 200, 0 ≤ N ≤ 10, X is multiple of 10)
+// Output: For each test case, print Chef's score.
+
+// Logic:
+// Points per test case = X / 10
+// Chef's score = (X / 10) * N
+
+// Examples:
+// Input: 10 3   → Output: 3    (10/10 * 3 = 1 * 3 = 3)
+// Input: 100 10 → Output: 100  (100/10 * 10 = 10 * 10 = 100)
+// Input: 130 4  → Output: 52   (130/10 * 4 = 13 * 4 = 52)
+// Input: 70 0   → Output: 0    (70/10 * 0 = 7 * 0 = 0)
+
+#include <iostream>
+using namespace std;
+    
+int main() {
+    int T;
+    cin >> T;
+
+    while(T--) {
+        int X, N;
+        cin >> X >> N;
+
+        cout << (X / 10) * N << endl;
+    }
+    
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
