@@ -244,3 +244,44 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+// 🟢 Problem 260: Chef Plays Ludo
+// In Ludo, Chef can enter a new token only if he rolls a 6 on the die.
+// Given X (the number rolled), check if Chef can enter a new token.
+
+// Input:
+// First line: T (1 ≤ T ≤ 6) — test cases
+// Next, T lines: One integer X (1 ≤ X ≤ 6)
+// Output: For each test case, print "YES" if X == 6, otherwise "NO" (case-insensitive)
+
+// Logic:
+// If X == 6 → Can enter token → "YES"
+// Else → Cannot enter → "NO"
+
+// Examples:
+// Input: 1 → Output: NO   (1 ≠ 6 → cannot enter)
+// Input: 6 → Output: YES  (6 == 6 → can enter)
+// Input: 3 → Output: NO   (3 ≠ 6 → cannot enter)
+
+#include <iostream>
+using namespace std;
+    
+int main() {
+    int T;
+    cin >> T;
+
+    while(T--) {
+        int X;
+        cin >> X;
+
+        if (X == 6)
+            cout << "Yes" << endl;
+        else
+            cout << "No" << endl;
+    }
+    
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
