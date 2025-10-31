@@ -205,3 +205,42 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+// 🟢 Problem 257: Biryani Classes
+// Chef attends X weeks of MasterChef's biryani classes, each costing Y coins.
+// Find the total amount Chef has to pay.
+
+// Input:
+// First line: T (1 ≤ T ≤ 10^4)
+// Next T lines: Two integers X and Y (1 ≤ X, Y ≤ 100)
+// Output: For each test case, print X * Y (total cost)
+
+// Logic:
+// Total cost = Number of weeks × Cost per week
+// → Total = X * Y
+
+// Examples:
+// Input: 1 10 → Output: 10   (1 × 10 = 10)
+// Input: 1 15 → Output: 15   (1 × 15 = 15)
+// Input: 2 10 → Output: 20   (2 × 10 = 20)
+// Input: 2 15 → Output: 30   (2 × 15 = 30)
+
+#include <iostream>
+using namespace std;
+    
+int main() {
+    int T;
+    cin >> T;
+
+    while(T--) {
+        int X, Y;
+        cin >> X >> Y;
+
+        cout << X * Y << endl;
+    }
+    
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
