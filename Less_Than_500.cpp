@@ -325,3 +325,39 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+// 🟢 Problem 267: 404 Not Found
+// Chef's website returns:
+//   - "NOT FOUND" if HTTP status code X == 404
+//   - "FOUND" otherwise
+// Given X, output the correct response.
+
+// Input: One integer X (100 ≤ X ≤ 999)
+// Output: "NOT FOUND" if X == 404, else "FOUND" (case-insensitive)
+
+// Logic:
+// If X == 404 → Print "NOT FOUND"
+// Else → Print "FOUND"
+
+// Examples:
+// Input: 200 → Output: FOUND      (200 ≠ 404)
+// Input: 404 → Output: NOT FOUND  (404 == 404)
+// Input: 301 → Output: FOUND      (301 ≠ 404)
+
+#include <iostream>
+using namespace std;
+    
+int main() {
+    int X;
+    cin >> X;
+
+    if(X == 404)
+        cout << "Not Found";
+    else
+        cout << "Found";
+
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
