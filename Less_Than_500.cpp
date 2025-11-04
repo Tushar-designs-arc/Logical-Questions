@@ -287,6 +287,39 @@ int main() {
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 
+// 🟢 Problem 264: How Many Unattempted Problems
+// CodeChef's Beginner section has X total problems.
+// Chef has attempted Y of them.
+// Find how many problems are still unattempted.
+
+// Input: Two integers X and Y (1 ≤ Y ≤ X ≤ 1000)
+// Output: Print X - Y (number of unattempted problems)
+
+// Logic:
+// Unattempted = Total problems - Attempted problems
+// → Unattempted = X - Y
+
+// Examples:
+// Input: 10 4   → Output: 6    (10 - 4 = 6 unattempted)
+// Input: 10 10  → Output: 0    (10 - 10 = 0 unattempted)
+// Input: 1000 990 → Output: 10 (1000 - 990 = 10 unattempted)
+// Input: 500 1  → Output: 499 (500 - 1 = 499 unattempted)
+
+#include <iostream>
+using namespace std;
+    
+int main() {
+    int X, Y;
+    cin >> X >> Y;
+
+    cout << X - Y << endl;
+    
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
 // 🟢 Problem 267: Determine the Score
 // A problem is worth X points and has exactly 10 test cases.
 // Each test case is worth the same number of points.
