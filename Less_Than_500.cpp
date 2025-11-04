@@ -361,3 +361,33 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+// 🟢 Problem 271: Off By One
+// The calculator computes A + B correctly, but appends a '1' at the end of the result.
+// Given A and B, predict the calculator's output.
+
+// Input: Two integers A and B (1 ≤ A, B ≤ 50)
+// Output: Print (A + B) * 10 + 1
+
+// Logic:
+// Actual sum = A + B
+// Calculator output = (A + B) followed by 1
+// → Mathematically: (A + B) * 10 + 1
+
+// Examples:
+// Input: 3 5  → Output: 81   ((3+5)*10 + 1 = 8*10 + 1 = 81)
+// Input: 4 12 → Output: 161  ((4+12)*10 + 1 = 16*10 + 1 = 161)
+
+#include <iostream>
+using namespace std;
+    
+int main() {
+    int A, B;
+    cin >> A >> B;
+
+    cout << A + B << "1"; // Can also use 1.
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
