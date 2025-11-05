@@ -503,3 +503,46 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+// 🟢 Problem 273: IPL Ticket Rush
+// N students want to attend an IPL match, but only M tickets are available.
+// Find how many students won't get a ticket.
+
+// Input:
+// First line: T (1 ≤ T ≤ 1000)
+// Next T lines: Two integers N and M (1 ≤ N, M ≤ 10^5)
+// Output: For each test case, print max(0, N - M)
+
+// Logic:
+// Students without ticket = N - M, but never negative
+// → Answer = max(0, N - M)
+
+// Examples:
+// Input: 5 3 → Output: 2   (5 > 3 → 2 can't get ticket)
+// Input: 5 7 → Output: 0   (5 ≤ 7 → all get ticket)
+// Input: 4 1 → Output: 3   (4 > 1 → 3 can't get ticket)
+// Input: 8 8 → Output: 0   (8 == 8 → all get ticket)
+
+#include <iostream>
+using namespace std;
+    
+int main() {
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int N, M;
+        cin >> N >> M;
+
+        if(N > M) cout << N - M << endl;
+        else cout << 0 << endl;
+
+        // // OR
+        // cout << max(0, N - M) << endl;
+    }
+    
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
