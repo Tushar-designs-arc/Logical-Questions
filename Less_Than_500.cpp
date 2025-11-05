@@ -424,3 +424,43 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+// 🟢 Problem 272: Donation Drive
+// A blood drive needs N donations in total.
+// X donations have been collected so far.
+// Find how many more donations are needed to reach N.
+
+// Input:
+// First line: T (1 ≤ T ≤ 200)
+// Next T lines: Two integers N and X (1 ≤ X ≤ N ≤ 20)
+// Output: For each test case, print N - X
+
+// Logic:
+// Remaining donations = Total needed - Already collected
+// → Remaining = N - X
+
+// Examples:
+// Input: 5 2 → Output: 3   (5 - 2 = 3 more needed)
+// Input: 3 3 → Output: 0   (3 - 3 = 0 more needed)
+// Input: 5 4 → Output: 1   (5 - 4 = 1 more needed)
+// Input: 7 5 → Output: 2   (7 - 5 = 2 more needed)
+
+#include <iostream>
+using namespace std;
+    
+int main() {
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int X, N;
+        cin >> N >> X;
+
+        cout << N - X << endl;
+    }
+    
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
