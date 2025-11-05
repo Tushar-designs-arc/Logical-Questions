@@ -464,3 +464,42 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+// 🟢 Problem 273: Kitchen Timings
+// Chef's kitchen works from X pm to Y pm (1 ≤ X < Y ≤ 12).
+// Find how many hours Chef works.
+
+// Input:
+// First line: T (1 ≤ T ≤ 100)
+// Next, T lines: Two integers X and Y (1 ≤ X < Y ≤ 12)
+// Output: For each test case, print Y - X
+
+// Logic:
+// Working hours = End time - Start time
+// → Hours = Y - X
+
+// Examples:
+// Input: 1 2  → Output: 1   (2 - 1 = 1 hour)
+// Input: 3 7  → Output: 4   (7 - 3 = 4 hours)
+// Input: 9 11 → Output: 2   (11 - 9 = 2 hours)
+// Input: 2 10 → Output: 8   (10 - 2 = 8 hours)
+
+#include <iostream>
+using namespace std;
+    
+int main() {
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int X, Y;
+        cin >> X >> Y;
+
+        cout << Y - X << endl;
+    }
+    
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
