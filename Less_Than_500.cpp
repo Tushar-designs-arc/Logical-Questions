@@ -589,3 +589,49 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+// 🟢 Problem 279: Reach on Time
+// Chef takes 30 minutes to reach office.
+// He leaves X minutes before he is supposed to reach.
+// Determine if he will reach on time or not.
+
+// Input:
+// First line: T (1 ≤ T ≤ 60)
+// Next T lines: One integer X (1 ≤ X ≤ 60)
+// Output: For each test case, print "YES" if X ≥ 30, else "NO" (case-insensitive)
+
+// Logic:
+// Chef reaches on time if he leaves at least 30 minutes early.
+// → If X >= 30 → "YES"
+// → Else → "NO"
+
+// Examples:
+// Input: 30 → Output: YES  (30 >= 30 → on time)
+// Input: 60 → Output: YES  (60 >= 30 → early)
+// Input: 14 → Output: NO   (14 < 30 → late)
+// Input: 29 → Output: NO   (29 < 30 → late)
+// Input: 31 → Output: YES  (31 >= 30 → on time)
+// Input: 42 → Output: YES  (42 >= 30 → early)
+
+#include <iostream>
+using namespace std;
+    
+int main() {
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int X;
+        cin >> X;
+
+        if(X >= 30)
+            cout << "Yes" << endl;
+        else
+            cout << "No" << endl;
+    }
+
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
