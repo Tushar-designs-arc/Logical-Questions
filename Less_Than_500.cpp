@@ -546,3 +546,46 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+// 🟢 Problem 279: Audible Range
+// Binary (Chef's dog) hears frequencies from 67 Hz to 45000 Hz (both inclusive).
+// Given frequency X, determine if binary can hear it or not.
+
+// Input:
+// First line: T (1 ≤ T ≤ 10^4)
+// Next T lines: One integer X (1 ≤ X ≤ 10^6)
+// Output: For each test case, print "YES" if 67 ≤ X ≤ 45000, else "NO" (case-insensitive)
+
+// Logic:
+// If 67 <= X <= 45000 → "YES"
+// Else → "NO"
+
+// Examples:
+// Input: 42     → Output: NO   (42 < 67)
+// Input: 67     → Output: YES  (67 ≥ 67)
+// Input: 402    → Output: YES  (67 ≤ 402 ≤ 45000)
+// Input: 45000  → Output: YES  (45000 ≤ 45000)
+// Input: 45005  → Output: NO   (45005 > 45000)
+
+#include <iostream>
+using namespace std;
+    
+int main() {
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int X;
+        cin >> X;
+
+        if (67 <= X && X <= 45000)
+            cout << "Yes" << endl;
+        else
+            cout << "No" << endl;
+    }
+    
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
