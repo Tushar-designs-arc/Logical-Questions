@@ -635,3 +635,38 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+// 🟢 Problem 279: Puzzle Hunt
+// The puzzle hunt allows teams of 6 to 8 people (inclusive).
+// But, team cannot have more than 8 people.
+// Chef's team has N people. Check if they are eligible.
+
+// Input: One integer N (1 ≤ N ≤ 10)
+// Output: Print "Yes" if 6 ≤ N ≤ 8, otherwise "No" (case-insensitive)
+
+// Logic:
+// If N >= 6 AND N <= 8 → "Yes"
+// Else → "No"
+
+// Examples:
+// Input: 4 → Output: No   (4 < 6 → too small)
+// Input: 7 → Output: Yes  (6 ≤ 7 ≤ 8 → eligible)
+// Input: 8 → Output: Yes  (6 ≤ 8 ≤ 8 → eligible)
+
+#include <iostream>
+using namespace std;
+    
+int main() {
+    int N;
+    cin >> N;
+
+    if(N >= 6 && N <= 8)
+        cout << "Yes";
+    else
+        cout << "No";
+    
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
