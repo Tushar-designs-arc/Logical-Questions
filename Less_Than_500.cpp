@@ -712,3 +712,44 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+// 🟢 Problem 281: Who is taller!
+// Alice's height = X cm, Bob's height = Y cm (X ≠ Y)
+// Determine who is taller.
+
+// Input:
+// First line: T (1 ≤ T ≤ 1000)
+// Next T lines: Two integers X and Y (100 ≤ X, Y ≤ 200, X ≠ Y)
+// Output: For each test case, print "A" if Alice taller, "B" if Bob taller (case-insensitive)
+
+// Logic:
+// If X > Y → Alice is taller → "A"
+// Else (Y > X) → Bob is taller → "B"
+
+// Examples:
+// Input: 150 160 → Output: B   (150 < 160 → Bob taller)
+// Input: 160 150 → Output: A   (160 > 150 → Alice taller)
+
+#include <iostream>
+using namespace std;
+    
+int main() {
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int X, Y;
+        cin >> X >> Y;
+
+        if(X > Y)
+            cout << "A" << endl;
+        else
+            cout << "B" << endl;
+    }
+
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
