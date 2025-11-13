@@ -670,3 +670,45 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+// 🟢 Problem 280: Bone Appetit
+// Suri Bhai visits two sectors on Halloween:
+// - "Bones": N people, each gives X treats
+// - "Blood": M people, each gives Y treats
+// Find total treats Suri Bhai gets.
+
+// Input:
+// Line 1: Two integers N and M (0 ≤ N, M ≤ 100)
+// Line 2: Two integers X and Y (0 ≤ X, Y ≤ 1000)
+// Output: Print total treats = (N * X) + (M * Y)
+
+// Logic:
+// Total treats = (people in Bones × treats per person) + (people in Blood × treats per person)
+// → Total = N * X + M * Y
+
+// Examples:
+// Input:
+// 4 2
+// 5 6
+// → Output: 32   (4*5 + 2*6 = 20 + 12 = 32)
+
+// Input:
+// 5 0
+// 0 2
+// → Output: 0    (5*0 + 0*2 = 0 + 0 = 0)
+
+#include <iostream>
+using namespace std;
+    
+int main() {
+    int N, M, X, Y;
+    cin >> N >> M >> X >> Y;
+    
+    cout << (N * X) + (M * Y);
+
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
