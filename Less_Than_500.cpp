@@ -838,3 +838,34 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+// 🟢 Problem 284: 2000
+// Chef has N notes of ₹2000.
+// He wants to pay the same amount using ₹500 notes only.
+// Find how many ₹500 notes he needs.
+
+// Input: One integer N (1 ≤ N ≤ 100)
+// Output: Print number of ₹500 notes = N * 4
+
+// Logic:
+// Total amount = N * 2000
+// Each ₹500 note = 500 rupees
+// Number of ₹500 notes = (N * 2000) / 500 = N * 4
+
+// Examples:
+// Input: 4 → Output: 16   (4 × 2000 = 8000 → 8000 / 500 = 16)
+
+#include <iostream>
+using namespace std;
+    
+int main() {
+    int N;
+    cin >> N;
+
+    cout << N * 4;
+    
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
