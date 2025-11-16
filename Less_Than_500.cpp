@@ -793,3 +793,48 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+// 🟢 Problem 284: Best of Two
+// Chef takes an exam twice: scores X in first attempt, Y in second.
+// Final score = maximum of X and Y.
+
+// Input:
+// First line: T (1 ≤ T ≤ 1000)
+// Next T lines: Two integers X and Y (0 ≤ X, Y ≤ 100)
+// Output: For each test case, print max(X, Y)
+
+// Logic:
+// Final score = the higher score between X and Y
+// → Answer = max(X, Y)
+
+// Examples:
+// Input: 40 60 → Output: 60   (max(40,60) = 60)
+// Input: 67 55 → Output: 67   (max(67,55) = 67)
+// Input: 50 50 → Output: 50   (max(50,50) = 50)
+// Input: 1 100 → Output: 100  (max(1,100) = 100)
+
+#include <iostream>
+using namespace std;
+    
+int main() {
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int X, Y;
+        cin >> X >> Y;
+
+        if (X >= Y)
+            cout << X << endl;
+        else
+            cout << Y << endl;
+        
+        // // OR
+        // cout << max(X, Y) << endl;
+    }
+
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
