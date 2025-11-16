@@ -753,3 +753,43 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+// 🟢 Problem 281: Reach the Target
+// Team B is chasing a target of X runs.
+// They have currently scored Y runs.
+// Find how many more runs they need to win.
+
+// Input:
+// First line: T (1 ≤ T ≤ 10)
+// Next T lines: Two integers X and Y (50 ≤ Y < X ≤ 200)
+// Output: For each test case, print X - Y
+
+// Logic:
+// Runs needed to win = Target - Current score
+// → Answer = X - Y
+
+// Examples:
+// Input: 200 50 → Output: 150  (200 - 50 = 150)
+// Input: 100 99 → Output: 1    (100 - 99 = 1)
+// Input: 130 97 → Output: 33   (130 - 97 = 33)
+// Input: 53 51  → Output: 2    (53 - 51 = 2)
+
+#include <iostream>
+using namespace std;
+    
+int main() {
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int X, Y;
+        cin >> X >> Y;
+
+        cout << X - Y << endl;
+    }
+
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
