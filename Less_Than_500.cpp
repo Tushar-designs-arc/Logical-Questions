@@ -672,7 +672,6 @@ int main() {
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 
-
 // 🟢 Problem 280: Bone Appetit
 // Suri Bhai visits two sectors on Halloween:
 // - "Bones": N people, each gives X treats
@@ -712,7 +711,6 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
-
 
 
 // 🟢 Problem 281: Who is taller!
@@ -906,6 +904,50 @@ int main() {
             cout << "Yes" << endl;
         else
             cout << "No" << endl;        
+    }
+
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+// 🟢 Problem 289: Candy Division
+// 3 friends, N candies in total.
+// Can we divide all candies equally so each gets the same number?
+// → Yes if N is divisible by 3, else No.
+
+// Input:
+// First line: T (1 ≤ T ≤ 100)
+// Next T lines: One integer N (1 ≤ N ≤ 100)
+// Output: For each test case, print "YES" if N % 3 == 0, else "NO" (case-insensitive)
+
+// Logic:
+// Equal distribution possible only if N is divisible by 3
+// → If N % 3 == 0 → "YES"
+// → Else → "NO"
+
+// Examples:
+// Input: 3 → Output: YES  (3 % 3 = 0 → each gets 1)
+// Input: 4 → Output: NO   (4 % 3 = 1 → not divisible)
+// Input: 2 → Output: NO   (2 % 3 = 2 → not divisible)
+// Input: 6 → Output: YES  (6 % 3 = 0 → each gets 2)
+
+#include <iostream>
+using namespace std;
+    
+int main() {
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int N;
+        cin >> N;
+
+        if(N % 3 == 0)
+            cout << "Yes" << endl;
+        else
+            cout << "No" << endl;
     }
 
     return 0;
