@@ -954,3 +954,45 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+// 🟢 Problem 294: Chef On Date
+// Chef has X dollars, bill is Y dollars.
+// Can he pay the bill without borrowing?
+
+// Input:
+// First line: T (1 ≤ T ≤ 100)
+// Next T lines: Two integers X and Y (1 ≤ X, Y ≤ 100)
+// Output: For each test case, print "YES" if X ≥ Y, else "NO" (case-insensitive)
+
+// Logic:
+// If X >= Y → Chef can pay → "YES"
+// Else → Chef needs to borrow → "NO"
+
+// Examples:
+// Input: 1 1  → Output: YES  (1 >= 1 → can pay)
+// Input: 1 2  → Output: NO   (1 < 2 → needs to borrow)
+// Input: 2 1  → Output: YES  (2 >= 1 → can pay)
+// Input: 50 100 → Output: NO (50 < 100 → needs to borrow)
+
+#include <iostream>
+using namespace std;
+    
+int main() {
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int X, Y;
+        cin >> X >> Y;
+
+        if(X >= Y)
+            cout << "Yes" << endl;
+        else
+            cout << "No" << endl;
+    }
+
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
