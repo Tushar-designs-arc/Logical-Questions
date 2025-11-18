@@ -869,3 +869,46 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+// 🟢 Problem 285: Roller Coaster
+// Chef's son has height X inches.
+// Minimum height required for ride: H inches.
+// Determine if he can go on the ride.
+
+// Input:
+// First line: T (1 ≤ T ≤ 1000)
+// Next T lines: Two integers X and H (1 ≤ X, H ≤ 100)
+// Output: For each test case, print "YES" if X ≥ H, else "NO" (case-insensitive)
+
+// Logic:
+// If X >= H → Can go → "YES"
+// Else → Cannot go → "NO"
+
+// Examples:
+// Input: 15 20 → Output: NO   (15 < 20 → too short)
+// Input: 50 48 → Output: YES  (50 ≥ 48 → tall enough)
+// Input: 32 32 → Output: YES  (32 ≥ 32 → exactly tall enough)
+// Input: 38 39 → Output: NO   (38 < 39 → too short)
+
+#include <iostream>
+using namespace std;
+    
+int main() {
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int X, Y;
+        cin >> X >> Y;
+
+        if (X >= Y)
+            cout << "Yes" << endl;
+        else
+            cout << "No" << endl;        
+    }
+
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
