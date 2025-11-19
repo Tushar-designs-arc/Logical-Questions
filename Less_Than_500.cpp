@@ -996,3 +996,47 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+// 🟢 Problem 295: Parity
+// Ashu and Arvind have N chocolates.
+// Can they divide them equally (each gets N/2)?
+// → Yes if N is even, No if odd.
+
+// Input:
+// First line: T (1 ≤ T ≤ 10)
+// Next T lines: One integer N (1 ≤ N ≤ 10)
+// Output: For each test case, print "Yes" if N is even, "No" if odd (case-insensitive)
+
+// Logic:
+// Equal division possible only if N is divisible by 2
+// → If N % 2 == 0 → "Yes"
+// → Else → "No"
+
+// Examples:
+// Input: 10 → Output: Yes  (10 % 2 = 0 → each gets 5)
+// Input: 4  → Output: Yes  (4 % 2 = 0 → each gets 2)
+// Input: 3  → Output: No   (3 % 2 = 1 → not divisible)
+// Input: 2  → Output: Yes  (2 % 2 = 0 → each gets 1)
+
+#include <iostream>
+using namespace std;
+    
+int main() {
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int N;
+        cin >> N;
+
+        if (N % 2 == 0)
+            cout << "Yes" << endl;
+        else
+            cout << "No" << endl;
+    }    
+    
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
