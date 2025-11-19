@@ -1040,3 +1040,42 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+// 🟢 Problem 296: Total Prize Money
+// Top 10 rankers get X rupees each
+// Ranks 11 to 100 (90 people) get Y rupees each
+// Find total prize money.
+
+// Input:
+// First line: T (1 ≤ T ≤ 1000)
+// Next T lines: Two integers X and Y (1 ≤ Y ≤ X ≤ 1000)
+// Output: For each test case, print (10 * X) + (90 * Y)
+
+// Logic:
+// Total prize = (10 × X) + (90 × Y)
+
+// Examples:
+// Input: 1000 100 → Output: 19000  (10*1000 + 90*100 = 10000 + 9000 = 19000)
+// Input: 1000 1000 → Output: 100000 (10*1000 + 90*1000 = 10000 + 90000 = 100000)
+// Input: 80 1     → Output: 890    (10*80 + 90*1 = 800 + 90 = 890)
+// Input: 400 30   → Output: 6700   (10*400 + 90*30 = 4000 + 2700 = 6700)
+
+#include <iostream>
+using namespace std;
+    
+int main() {
+    int T;
+    cin >> T;
+
+    while(T--) {
+        int X, Y;
+        cin >> X >> Y;
+
+        cout << (10 * X) + (90 * Y) << endl;
+    }
+
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
