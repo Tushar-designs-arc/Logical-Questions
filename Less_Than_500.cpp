@@ -1079,3 +1079,42 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+// 🟢 Problem 296: Counting Words
+// A book has N pages, each with M words.
+// Find the total number of words in the book.
+
+// Input:
+// First line: T (1 ≤ T ≤ 100)
+// Next T lines: Two integers N and M (1 ≤ N, M ≤ 100)
+// Output: For each test case, print N * M
+
+// Logic:
+// Total words = Number of pages × Words per page
+// → Answer = N * M
+
+// Examples:
+// Input: 1 1    → Output: 1    (1 × 1 = 1)
+// Input: 4 2    → Output: 8    (4 × 2 = 8)
+// Input: 2 4    → Output: 8    (2 × 4 = 8)
+// Input: 95 42  → Output: 3990 (95 × 42 = 3990)
+
+#include <iostream>
+using namespace std;
+    
+int main() {
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int N, M;
+        cin >> N >> M;
+
+        cout << N * M << endl;
+    }
+
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
