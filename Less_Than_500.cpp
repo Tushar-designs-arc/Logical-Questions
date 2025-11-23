@@ -1118,3 +1118,45 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+// 🟢 Problem 296: Battery Health
+// Apple considers iPhone battery in optimal condition if health >= 80%.
+// Given, Your iPhone has X% battery health, determine if it's optimal.
+
+// Input:
+// First line: T (1 ≤ T ≤ 100)
+// Next T lines: One integer X (0 ≤ X ≤ 100)
+// Output: For each test case, print "YES" if X >= 80, else "NO" (case-insensitive)
+
+// Logic:
+// If X >= 80 → Optimal → "YES"
+// Else → Not optimal → "NO"
+
+// Examples:
+// Input: 97 → Output: YES  (97 >= 80 → optimal)
+// Input: 42 → Output: NO   (42 < 80 → not optimal)
+// Input: 80 → Output: YES  (80 >= 80 → optimal)
+// Input: 10 → Output: NO   (10 < 80 → not optimal)
+
+#include <iostream>
+using namespace std;
+    
+int main() {
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int X;
+        cin >> X;
+
+        if (X >= 80)
+            cout << "Yes" << endl;
+        else
+            cout << "No" << endl;
+    }
+
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
