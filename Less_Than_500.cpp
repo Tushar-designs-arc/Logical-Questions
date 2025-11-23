@@ -1160,3 +1160,47 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+// 🟢 Problem 298: Tom and Jerry Chase
+// Jerry runs at speed X m/s, Tom at Y m/s.
+// Initially, they are not at the same position.
+// Can Tom catch Jerry?
+
+// Input:
+// First line: T (1 ≤ T ≤ 100)
+// Next T lines: Two integers X and Y (1 ≤ X, Y ≤ 10)
+// Output: For each test case, print "YES" if Tom can catch Jerry, else "NO" (case-insensitive)
+
+// Logic:
+// Tom can catch Jerry only if his speed is strictly greater than Jerry's.
+// → If Y > X → "YES"
+// → Else (Y <= X) → "NO"
+
+// Examples:
+// Input: 2 3 → Output: YES  (3 > 2 → Tom faster → can catch)
+// Input: 4 1 → Output: NO   (1 < 4 → Tom slower → cannot catch)
+// Input: 1 1 → Output: NO   (1 == 1 → same speed, different position → cannot catch)
+// Input: 3 5 → Output: YES  (5 > 3 → Tom faster → can catch)
+
+#include <iostream>
+using namespace std;
+    
+int main() {
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int X, Y;
+        cin >> X >> Y;
+
+        if (X < Y)
+            cout << "Yes" << endl;
+        else
+            cout << "No" << endl;
+    }
+
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
