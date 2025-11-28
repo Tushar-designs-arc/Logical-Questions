@@ -1245,3 +1245,47 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+// 🟢 Problem 299: Right There
+// Chef wants to host a party with N people.
+// Party hall has capacity of X people.
+// Can he host the party?
+
+// Input:
+// First line: T (1 ≤ T ≤ 100)
+// Next T lines: Two integers N and X (1 ≤ N, X ≤ 10)
+// Output: For each test case, print "YES" if N ≤ X, else "NO" (case-insensitive)
+
+// Logic:
+// Party can be hosted only if number of people ≤ capacity
+// → If N <= X → "YES"
+// → Else → "NO"
+
+// Examples:
+// Input: 2 5  → Output: YES  (2 ≤ 5 → can host)
+// Input: 4 3  → Output: NO   (4 > 3 → cannot host)
+// Input: 6 6  → Output: YES  (6 ≤ 6 → can host)
+// Input: 10 9 → Output: NO   (10 > 9 → cannot host)
+
+#include <iostream>
+using namespace std;
+    
+int main() {
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int N, X;
+        cin >> N >> X;
+
+        if (N <= X)
+            cout << "Yes" << endl;
+        else
+            cout << "No" << endl;
+    }
+
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
