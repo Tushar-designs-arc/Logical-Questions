@@ -1204,3 +1204,44 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+// 🟢 Problem 299: Ageing
+// Chef is currently 20 years old.
+// Chefina is currently 10 years old.
+// They were born on the same day and month (different years).
+// Given, Chef's future age X, find Chefina's age at that time.
+
+// Input:
+// First line: T (1 ≤ T ≤ 25)
+// Next T lines: One integer X (25 ≤ X ≤ 50)
+// Output: For each test case, print Chefina's age = X - 10
+
+// Logic:
+// Age difference = 20 - 10 = 10 years (constant)
+// So when Chef is X years old, Chefina will be X - 10.
+
+// Examples:
+// Input: 25 → Output: 15  (25 - 10 = 15)
+// Input: 36 → Output: 26  (36 - 10 = 26)
+// Input: 50 → Output: 40  (50 - 10 = 40)
+// Input: 44 → Output: 34  (44 - 10 = 34)
+
+#include <iostream>
+using namespace std;
+    
+int main() {
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int X;
+        cin >> X;
+
+        cout << X - 10 << endl;
+    }
+
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
