@@ -1443,3 +1443,49 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+// 🟢 Problem 305: Chairs Requirement
+// X students joined Chef's class, each needs 1 chair.
+// Chef already has Y chairs.
+// Find minimum number of new chairs to buy so every student gets a chair.
+
+// Input:
+// First line: T (1 ≤ T ≤ 1000)
+// Next T lines: Two integers X and Y (0 ≤ X, Y ≤ 100)
+// Output: For each test case, print max(0, X - Y)
+
+// Logic:
+// Required chairs = X
+// Already has = Y
+// Need to buy = max(0, X - Y)
+// → If X > Y → buy (X - Y)
+// → Else → buy 0
+
+// Examples:
+// Input: 20 14 → Output: 6   (20 > 14 → need 6 more)
+// Input: 41 41 → Output: 0   (41 == 41 → no need)
+// Input: 35 0  → Output: 35  (35 > 0 → need 35)
+// Input: 50 100 → Output: 0  (50 ≤ 100 → already enough)
+
+#include <iostream>
+using namespace std;
+    
+int main() {
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int X, Y;
+        cin >> X >> Y;
+
+        if (X > Y)
+            cout << X - Y << endl;
+        else
+            cout << 0 << endl;
+    }
+
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
