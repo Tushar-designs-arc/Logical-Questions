@@ -1348,3 +1348,53 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+// 🟢 Problem 300: Bull or Bear
+// Chef buys stock at price X and sells at price Y.
+// Determine if it was PROFIT, LOSS, or NEUTRAL.
+
+// Input:
+// First line: T (1 ≤ T ≤ 500)
+// Next T lines: Two integers X and Y (1 ≤ X, Y ≤ 100)
+// Output: For each test case:
+//   - "PROFIT" if Y > X
+//   - "LOSS" if Y < X
+//   - "NEUTRAL" if Y == X
+//   (Case-insensitive)
+
+// Logic:
+// Compare selling price Y with buying price X:
+// → Y > X → PROFIT
+// → Y < X → LOSS
+// → Y == X → NEUTRAL
+
+// Examples:
+// Input: 4 2 → Output: LOSS     (2 < 4 → sold cheaper)
+// Input: 8 8 → Output: NEUTRAL  (8 == 8 → no change)
+// Input: 3 4 → Output: PROFIT   (4 > 3 → sold higher)
+// Input: 2 1 → Output: LOSS     (1 < 2 → sold cheaper)
+
+#include <iostream>
+using namespace std;
+    
+int main() {
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int X, Y;
+        cin >> X >> Y;
+
+        if (X < Y)
+            cout << "Profit" << endl;
+        else if (X > Y)
+            cout << "Loss" << endl;
+        else
+            cout << "Neutral" << endl;
+    }
+
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
