@@ -1398,3 +1398,48 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+// 🟢 Problem 302: Four Tickets
+// 4 friends want to attend a concert.
+// Each ticket costs X rupees.
+// They go only if total cost <= 1000.
+// Find if they will go or not.
+
+// Input:
+// First line: T (1 ≤ T ≤ 100)
+// Next T lines: One integer X (1 ≤ X ≤ 1000)
+// Output: For each test case, print "YES" if (4 * X) <= 1000, else "NO" (case-insensitive)
+
+// Logic:
+// Total cost = 4 * X; OR, X <= 250 (1000 / 4)
+// If 4 * X <= 1000 → "YES"
+// Else → "NO"
+
+// Examples:
+// Input: 100  → Output: YES  (4*100 = 400  ≤ 1000)
+// Input: 500  → Output: NO   (4*500 = 2000 > 1000)
+// Input: 250  → Output: YES  (4*250 = 1000 ≤ 1000)
+// Input: 1000 → Output: NO   (4*1000 = 4000 > 1000)
+
+#include <iostream>
+using namespace std;
+    
+int main() {
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int X;
+        cin >> X;
+
+        if (X <= 250)
+            cout << "Yes" << endl;
+        else
+            cout << "No" << endl;
+    }
+
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
