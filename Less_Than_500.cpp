@@ -1489,3 +1489,46 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+// 🟢 Problem 305: Chef and Donation
+// Chef earns X rupees, Chefina earns Y rupees, and it's guaranteed that Y > X.
+// They want to have exactly the same amount, so the one with more money (Chefina)
+// donates the difference to charity.
+// Find out how much money is donated in total (which is simply Y - X).
+
+// Input:
+// First line: T (1 ≤ T ≤ 100) → number of test cases
+// Next, T lines: two integers X and Y (1 ≤ X < Y ≤ 1000)
+
+// Output:
+// For each test case, print a single integer: the amount donated = Y - X
+
+// Logic:
+// Since Y > X is guaranteed, the donation amount is always Y - X.
+// No need to check which is larger — just subtract.
+
+// Examples:
+// 1 3  → 3-difference = 2 → donate 2
+// 2 5  → 5-2 = 3 → donate 3
+// 4 5  → 5-4 = 1 → donate 1
+// 2 10 → 10-2 = 8 → donate 8
+
+#include <iostream>
+using namespace std;
+    
+int main() {
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int X, Y;
+        cin >> X >> Y;
+
+        cout << Y - X << '\n';
+    }
+
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
