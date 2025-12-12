@@ -1532,3 +1532,48 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+// 🟢 Problem 308: Sum it
+// Bob has two numbers A and B. Alice claims that A + B = C.
+// You need to check whether Alice is correct.
+
+// Input:
+// First line: T (1 ≤ T ≤ 100) → number of test cases
+// Next, T lines: three integers A, B, C (0 ≤ A,B,C ≤ 100)
+
+// Output:
+// For each test case, print "YES" if A + B == C, otherwise print "NO"
+// (Case-insensitive: Yes, YES, yes, yEs etc. are all accepted)
+
+// Logic:
+// Simply check if A + B equals C
+// - If equal → "YES"
+// - Else     → "NO"
+
+// Examples:
+// 1 2 3 → 1+2 = 3 → YES
+// 4 5 9 → 4+5 = 9 → YES
+// 2 3 6 → 2+3 = 5 ≠ 6 → NO
+
+#include <iostream>
+using namespace std;
+    
+int main() {
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int A, B, C;
+        cin >> A >> B >> C;
+
+        if (A + B == C)
+            cout << "Yes" << '\n';
+        else
+            cout << "No" << '\n';
+    }
+
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
