@@ -155,7 +155,7 @@ int main() {
         int X, Y;
         cin >> X >> Y;
 
-        cout << X - Y << endl;
+        cout << X - Y << '\n';
     }
     
     return 0;
@@ -196,9 +196,9 @@ int main() {
         cin >> X;
 
         if(X <= 10)
-            cout << "Yes" << endl;
+            cout << "Yes" << '\n';
         else
-            cout << "No" << endl;
+            cout << "No" << '\n';
     }
     
     return 0;
@@ -213,7 +213,7 @@ int main() {
 
 // Input:
 // First line: T (1 ≤ T ≤ 10^4)
-// Next T lines: Two integers X and Y (1 ≤ X, Y ≤ 100)
+// Next, T lines: Two integers X and Y (1 ≤ X, Y ≤ 100)
 // Output: For each test case, print X * Y (total cost)
 
 // Logic:
@@ -237,7 +237,7 @@ int main() {
         int X, Y;
         cin >> X >> Y;
 
-        cout << X * Y << endl;
+        cout << X * Y << '\n';
     }
     
     return 0;
@@ -276,9 +276,9 @@ int main() {
         cin >> X;
 
         if (X == 6)
-            cout << "Yes" << endl;
+            cout << "Yes" << '\n';
         else
-            cout << "No" << endl;
+            cout << "No" << '\n';
     }
     
     return 0;
@@ -312,7 +312,7 @@ int main() {
     int X, Y;
     cin >> X >> Y;
 
-    cout << X - Y << endl;
+    cout << X - Y << '\n';
     
     return 0;
 }
@@ -327,7 +327,7 @@ int main() {
 
 // Input:
 // First line: T (1 ≤ T ≤ 100)
-// Next T lines: Two integers X and N (10 ≤ X ≤ 200, 0 ≤ N ≤ 10, X is multiple of 10)
+// Next, T lines: Two integers X and N (10 ≤ X ≤ 200, 0 ≤ N ≤ 10, X is multiple of 10)
 // Output: For each test case, print Chef's score.
 
 // Logic:
@@ -351,7 +351,7 @@ int main() {
         int X, N;
         cin >> X >> N;
 
-        cout << (X / 10) * N << endl;
+        cout << (X / 10) * N << '\n';
     }
     
     return 0;
@@ -433,7 +433,7 @@ int main() {
 
 // Input:
 // First line: T (1 ≤ T ≤ 200)
-// Next T lines: Two integers N and X (1 ≤ X ≤ N ≤ 20)
+// Next, T lines: Two integers N and X (1 ≤ X ≤ N ≤ 20)
 // Output: For each test case, print N - X
 
 // Logic:
@@ -457,7 +457,7 @@ int main() {
         int X, N;
         cin >> N >> X;
 
-        cout << N - X << endl;
+        cout << N - X << '\n';
     }
     
     return 0;
@@ -496,7 +496,7 @@ int main() {
         int X, Y;
         cin >> X >> Y;
 
-        cout << Y - X << endl;
+        cout << Y - X << '\n';
     }
     
     return 0;
@@ -511,7 +511,7 @@ int main() {
 
 // Input:
 // First line: T (1 ≤ T ≤ 1000)
-// Next T lines: Two integers N and M (1 ≤ N, M ≤ 10^5)
+// Next, T lines: Two integers N and M (1 ≤ N, M ≤ 10^5)
 // Output: For each test case, print max(0, N - M)
 
 // Logic:
@@ -535,11 +535,11 @@ int main() {
         int N, M;
         cin >> N >> M;
 
-        if(N > M) cout << N - M << endl;
-        else cout << 0 << endl;
+        if(N > M) cout << N - M << '\n';
+        else cout << 0 << '\n';
 
         // // OR
-        // cout << max(0, N - M) << endl;
+        // cout << max(0, N - M) << '\n';
     }
     
     return 0;
@@ -554,7 +554,7 @@ int main() {
 
 // Input:
 // First line: T (1 ≤ T ≤ 10^4)
-// Next T lines: One integer X (1 ≤ X ≤ 10^6)
+// Next, T lines: One integer X (1 ≤ X ≤ 10^6)
 // Output: For each test case, print "YES" if 67 ≤ X ≤ 45000, else "NO" (case-insensitive)
 
 // Logic:
@@ -580,9 +580,9 @@ int main() {
         cin >> X;
 
         if (67 <= X && X <= 45000)
-            cout << "Yes" << endl;
+            cout << "Yes" << '\n';
         else
-            cout << "No" << endl;
+            cout << "No" << '\n';
     }
     
     return 0;
@@ -598,7 +598,7 @@ int main() {
 
 // Input:
 // First line: T (1 ≤ T ≤ 60)
-// Next T lines: One integer X (1 ≤ X ≤ 60)
+// Next, T lines: One integer X (1 ≤ X ≤ 60)
 // Output: For each test case, print "YES" if X ≥ 30, else "NO" (case-insensitive)
 
 // Logic:
@@ -626,9 +626,9 @@ int main() {
         cin >> X;
 
         if(X >= 30)
-            cout << "Yes" << endl;
+            cout << "Yes" << '\n';
         else
-            cout << "No" << endl;
+            cout << "No" << '\n';
     }
 
     return 0;
@@ -719,7 +719,7 @@ int main() {
 
 // Input:
 // First line: T (1 ≤ T ≤ 1000)
-// Next T lines: Two integers X and Y (100 ≤ X, Y ≤ 200, X ≠ Y)
+// Next, T lines: Two integers X and Y (100 ≤ X, Y ≤ 200, X ≠ Y)
 // Output: For each test case, print "A" if Alice taller, "B" if Bob taller (case-insensitive)
 
 // Logic:
@@ -742,9 +742,9 @@ int main() {
         cin >> X >> Y;
 
         if(X > Y)
-            cout << "A" << endl;
+            cout << "A" << '\n';
         else
-            cout << "B" << endl;
+            cout << "B" << '\n';
     }
 
     return 0;
@@ -760,7 +760,7 @@ int main() {
 
 // Input:
 // First line: T (1 ≤ T ≤ 10)
-// Next T lines: Two integers X and Y (50 ≤ Y < X ≤ 200)
+// Next, T lines: Two integers X and Y (50 ≤ Y < X ≤ 200)
 // Output: For each test case, print X - Y
 
 // Logic:
@@ -784,7 +784,7 @@ int main() {
         int X, Y;
         cin >> X >> Y;
 
-        cout << X - Y << endl;
+        cout << X - Y << '\n';
     }
 
     return 0;
@@ -799,7 +799,7 @@ int main() {
 
 // Input:
 // First line: T (1 ≤ T ≤ 1000)
-// Next T lines: Two integers X and Y (0 ≤ X, Y ≤ 100)
+// Next, T lines: Two integers X and Y (0 ≤ X, Y ≤ 100)
 // Output: For each test case, print max(X, Y)
 
 // Logic:
@@ -824,12 +824,12 @@ int main() {
         cin >> X >> Y;
 
         if (X >= Y)
-            cout << X << endl;
+            cout << X << '\n';
         else
-            cout << Y << endl;
+            cout << Y << '\n';
         
         // // OR
-        // cout << max(X, Y) << endl;
+        // cout << max(X, Y) << '\n';
     }
 
     return 0;
@@ -876,7 +876,7 @@ int main() {
 
 // Input:
 // First line: T (1 ≤ T ≤ 1000)
-// Next T lines: Two integers X and H (1 ≤ X, H ≤ 100)
+// Next, T lines: Two integers X and H (1 ≤ X, H ≤ 100)
 // Output: For each test case, print "YES" if X ≥ H, else "NO" (case-insensitive)
 
 // Logic:
@@ -901,9 +901,9 @@ int main() {
         cin >> X >> Y;
 
         if (X >= Y)
-            cout << "Yes" << endl;
+            cout << "Yes" << '\n';
         else
-            cout << "No" << endl;        
+            cout << "No" << '\n';        
     }
 
     return 0;
@@ -919,7 +919,7 @@ int main() {
 
 // Input:
 // First line: T (1 ≤ T ≤ 100)
-// Next T lines: One integer N (1 ≤ N ≤ 100)
+// Next, T lines: One integer N (1 ≤ N ≤ 100)
 // Output: For each test case, print "YES" if N % 3 == 0, else "NO" (case-insensitive)
 
 // Logic:
@@ -945,9 +945,9 @@ int main() {
         cin >> N;
 
         if(N % 3 == 0)
-            cout << "Yes" << endl;
+            cout << "Yes" << '\n';
         else
-            cout << "No" << endl;
+            cout << "No" << '\n';
     }
 
     return 0;
@@ -962,7 +962,7 @@ int main() {
 
 // Input:
 // First line: T (1 ≤ T ≤ 100)
-// Next T lines: Two integers X and Y (1 ≤ X, Y ≤ 100)
+// Next, T lines: Two integers X and Y (1 ≤ X, Y ≤ 100)
 // Output: For each test case, print "YES" if X ≥ Y, else "NO" (case-insensitive)
 
 // Logic:
@@ -987,9 +987,9 @@ int main() {
         cin >> X >> Y;
 
         if(X >= Y)
-            cout << "Yes" << endl;
+            cout << "Yes" << '\n';
         else
-            cout << "No" << endl;
+            cout << "No" << '\n';
     }
 
     return 0;
@@ -1005,7 +1005,7 @@ int main() {
 
 // Input:
 // First line: T (1 ≤ T ≤ 10)
-// Next T lines: One integer N (1 ≤ N ≤ 10)
+// Next, T lines: One integer N (1 ≤ N ≤ 10)
 // Output: For each test case, print "Yes" if N is even, "No" if odd (case-insensitive)
 
 // Logic:
@@ -1031,9 +1031,9 @@ int main() {
         cin >> N;
 
         if (N % 2 == 0)
-            cout << "Yes" << endl;
+            cout << "Yes" << '\n';
         else
-            cout << "No" << endl;
+            cout << "No" << '\n';
     }    
     
     return 0;
@@ -1049,7 +1049,7 @@ int main() {
 
 // Input:
 // First line: T (1 ≤ T ≤ 1000)
-// Next T lines: Two integers X and Y (1 ≤ Y ≤ X ≤ 1000)
+// Next, T lines: Two integers X and Y (1 ≤ Y ≤ X ≤ 1000)
 // Output: For each test case, print (10 * X) + (90 * Y)
 
 // Logic:
@@ -1072,7 +1072,7 @@ int main() {
         int X, Y;
         cin >> X >> Y;
 
-        cout << (10 * X) + (90 * Y) << endl;
+        cout << (10 * X) + (90 * Y) << '\n';
     }
 
     return 0;
@@ -1087,7 +1087,7 @@ int main() {
 
 // Input:
 // First line: T (1 ≤ T ≤ 100)
-// Next T lines: Two integers N and M (1 ≤ N, M ≤ 100)
+// Next, T lines: Two integers N and M (1 ≤ N, M ≤ 100)
 // Output: For each test case, print N * M
 
 // Logic:
@@ -1111,7 +1111,7 @@ int main() {
         int N, M;
         cin >> N >> M;
 
-        cout << N * M << endl;
+        cout << N * M << '\n';
     }
 
     return 0;
@@ -1126,7 +1126,7 @@ int main() {
 
 // Input:
 // First line: T (1 ≤ T ≤ 100)
-// Next T lines: One integer X (0 ≤ X ≤ 100)
+// Next, T lines: One integer X (0 ≤ X ≤ 100)
 // Output: For each test case, print "YES" if X >= 80, else "NO" (case-insensitive)
 
 // Logic:
@@ -1151,9 +1151,9 @@ int main() {
         cin >> X;
 
         if (X >= 80)
-            cout << "Yes" << endl;
+            cout << "Yes" << '\n';
         else
-            cout << "No" << endl;
+            cout << "No" << '\n';
     }
 
     return 0;
@@ -1169,7 +1169,7 @@ int main() {
 
 // Input:
 // First line: T (1 ≤ T ≤ 100)
-// Next T lines: Two integers X and Y (1 ≤ X, Y ≤ 10)
+// Next, T lines: Two integers X and Y (1 ≤ X, Y ≤ 10)
 // Output: For each test case, print "YES" if Tom can catch Jerry, else "NO" (case-insensitive)
 
 // Logic:
@@ -1195,9 +1195,9 @@ int main() {
         cin >> X >> Y;
 
         if (X < Y)
-            cout << "Yes" << endl;
+            cout << "Yes" << '\n';
         else
-            cout << "No" << endl;
+            cout << "No" << '\n';
     }
 
     return 0;
@@ -1214,7 +1214,7 @@ int main() {
 
 // Input:
 // First line: T (1 ≤ T ≤ 25)
-// Next T lines: One integer X (25 ≤ X ≤ 50)
+// Next, T lines: One integer X (25 ≤ X ≤ 50)
 // Output: For each test case, print Chefina's age = X - 10
 
 // Logic:
@@ -1238,7 +1238,7 @@ int main() {
         int X;
         cin >> X;
 
-        cout << X - 10 << endl;
+        cout << X - 10 << '\n';
     }
 
     return 0;
@@ -1254,7 +1254,7 @@ int main() {
 
 // Input:
 // First line: T (1 ≤ T ≤ 100)
-// Next T lines: Two integers N and X (1 ≤ N, X ≤ 10)
+// Next, T lines: Two integers N and X (1 ≤ N, X ≤ 10)
 // Output: For each test case, print "YES" if N ≤ X, else "NO" (case-insensitive)
 
 // Logic:
@@ -1280,9 +1280,9 @@ int main() {
         cin >> N >> X;
 
         if (N <= X)
-            cout << "Yes" << endl;
+            cout << "Yes" << '\n';
         else
-            cout << "No" << endl;
+            cout << "No" << '\n';
     }
 
     return 0;
@@ -1297,7 +1297,7 @@ int main() {
 
 // Input:
 // First line: integer N (1 ≤ N ≤ 6) → number of test cases
-// Next N lines: three distinct integers A B C (1 ≤ A,B,C ≤ 10000)
+// Next, N lines: three distinct integers A B C (1 ≤ A,B,C ≤ 10000)
 
 // Output:
 // For each triple, print the second-largest number on a new line.
@@ -1356,7 +1356,7 @@ int main() {
 
 // Input:
 // First line: T (1 ≤ T ≤ 500)
-// Next T lines: Two integers X and Y (1 ≤ X, Y ≤ 100)
+// Next, T lines: Two integers X and Y (1 ≤ X, Y ≤ 100)
 // Output: For each test case:
 //   - "PROFIT" if Y > X
 //   - "LOSS" if Y < X
@@ -1387,11 +1387,11 @@ int main() {
         cin >> X >> Y;
 
         if (X < Y)
-            cout << "Profit" << endl;
+            cout << "Profit" << '\n';
         else if (X > Y)
-            cout << "Loss" << endl;
+            cout << "Loss" << '\n';
         else
-            cout << "Neutral" << endl;
+            cout << "Neutral" << '\n';
     }
 
     return 0;
@@ -1408,7 +1408,7 @@ int main() {
 
 // Input:
 // First line: T (1 ≤ T ≤ 100)
-// Next T lines: One integer X (1 ≤ X ≤ 1000)
+// Next, T lines: One integer X (1 ≤ X ≤ 1000)
 // Output: For each test case, print "YES" if (4 * X) <= 1000, else "NO" (case-insensitive)
 
 // Logic:
@@ -1434,9 +1434,9 @@ int main() {
         cin >> X;
 
         if (X <= 250)
-            cout << "Yes" << endl;
+            cout << "Yes" << '\n';
         else
-            cout << "No" << endl;
+            cout << "No" << '\n';
     }
 
     return 0;
@@ -1452,7 +1452,7 @@ int main() {
 
 // Input:
 // First line: T (1 ≤ T ≤ 1000)
-// Next T lines: Two integers X and Y (0 ≤ X, Y ≤ 100)
+// Next, T lines: Two integers X and Y (0 ≤ X, Y ≤ 100)
 // Output: For each test case, print max(0, X - Y)
 
 // Logic:
@@ -1480,9 +1480,9 @@ int main() {
         cin >> X >> Y;
 
         if (X > Y)
-            cout << X - Y << endl;
+            cout << X - Y << '\n';
         else
-            cout << 0 << endl;
+            cout << 0 << '\n';
     }
 
     return 0;
