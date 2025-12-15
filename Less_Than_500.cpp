@@ -1577,3 +1577,51 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+// 🟢 Problem 315: Get Subscription
+// Chef wants to conduct an online lecture of exactly X minutes.
+// The platform allows:
+// - Maximum 30 minutes without subscription
+// - Unlimited minutes with subscription
+// Determine whether Chef needs to buy a subscription.
+
+// Input:
+// First line: T (1 ≤ T ≤ 100) → number of test cases
+// Next, T lines: one integer X (1 ≤ X ≤ 100) → required lecture duration
+
+// Output:
+// For each test case, print "YES" if subscription is needed, "NO" otherwise
+// (Case-insensitive: YES, yes, YeS, etc. are all accepted)
+
+// Logic:
+// - If X > 30 → subscription required → "YES"
+// - If X ≤ 30 → no subscription needed → "NO"
+
+// Examples:
+// 50 → > 30 → YES
+// 3  → ≤ 30 → NO
+// 30 → ≤ 30 → NO
+// 80 → > 30 → YES
+
+#include <iostream>
+using namespace std;
+    
+int main() {
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int X;
+        cin >> X;
+
+        if (X <= 30)
+            cout << "No" << '\n';
+        else
+            cout << "Yes" << '\n';
+    }
+
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
