@@ -3,12 +3,16 @@
 // only if it scores 12 or more points in the group stage matches.
 // Given the total points X scored by a team, determine if it qualifies.
 
-// Input: One integer X (1 ≤ X ≤ 20)
-// Output: "Yes" if X ≥ 12, otherwise "No" (case-insensitive)
+// Input:
+// One integer X (1 ≤ X ≤ 20)
+
+// Output:
+// "Yes" if X ≥ 12, otherwise "No" (case-insensitive)
 
 // Logic:
 // If X >= 12 → Qualified (Yes)
 // Else → Not Qualified (No)
+
 // Examples:
 // Input: 3  → Output: No   (Score < 12 → does not qualify)
 // Input: 17 → Output: Yes  (Score ≥ 12 → qualifies)
@@ -24,6 +28,10 @@ int main(){
         cout << "Yes";
     else
         cout << "No";
+    
+    
+    // // Or,
+    // cout << (X >= 12 ? "Yes" : "No") << '\n';
 
     return 0;
 }
@@ -35,8 +43,11 @@ int main(){
 // Chef considers the number 7 lucky. The 7th letter he sees in a day is his lucky letter.
 // Given a string S of length 10 (the first 10 letters Chef saw today), find the 7th character.
 
-// Input: A string S of length 10, containing only lowercase letters (a-z)
-// Output: Print the 7th character of S (1-based index: position 7)
+// Input:
+// A string S of length 10, containing only lowercase letters (a-z)
+
+// Output:
+// Print the 7th character of S (1-based index: position 7)
 
 // Logic:
 // Since string length is exactly 10, access the character at index 6 (0-based indexing)
@@ -65,8 +76,11 @@ int main() {
 // A week has 7 days. Chef records X rainy days and Y cloudy days.
 // Find the number of clear days in the week.
 
-// Input: Two integers X and Y (0 ≤ X, Y ≤ 7 and X + Y ≤ 7)
-// Output: Number of clear days = 7 - X - Y
+// Input:
+// Two integers X and Y (0 ≤ X, Y ≤ 7 and X + Y ≤ 7)
+
+// Output:
+// Number of clear days = 7 - X - Y
 
 // Logic:
 // Total days = 7
@@ -95,8 +109,11 @@ int main() {
 // Chef was paying X rupees as rent. When Chefina moves in, the rent doubles.
 // Find the final rent Chef has to pay.
 
-// Input: One integer X (1 ≤ X ≤ 10)
-// Output: Print 2 * X (the new rent)
+// Input:
+// One integer X (1 ≤ X ≤ 10)
+
+// Output:
+// Print 2 * X (the new rent)
 
 // Logic:
 // New rent = 2 × Initial rent
@@ -130,7 +147,9 @@ int main() {
 // Input:
 // First line: T (1 ≤ T ≤ 100) — test cases
 // Next, T lines: Two integers X and Y (1 ≤ Y < X ≤ 100)
-// Output: For each test case, print the minimum amount to invest.
+
+// Output:
+// For each test case, print the minimum amount to invest.
 
 // Logic:
 // Taxable income after investment = X - investment
@@ -171,7 +190,9 @@ int main() {
 // Input:
 // First line: T (1 ≤ T ≤ 100) — test cases
 // Next, T lines: One integer X (1 ≤ X ≤ 100) — Chef's current rank
-// Output: For each test case, print "YES" if X ≤ 10, otherwise "NO" (case-insensitive)
+
+// Output:
+// For each test case, print "YES" if X ≤ 10, otherwise "NO" (case-insensitive)
 
 // Logic:
 // Chef qualifies if rank X ≤ 10
@@ -214,7 +235,9 @@ int main() {
 // Input:
 // First line: T (1 ≤ T ≤ 10^4)
 // Next, T lines: Two integers X and Y (1 ≤ X, Y ≤ 100)
-// Output: For each test case, print X * Y (total cost)
+
+// Output:
+// For each test case, print X * Y (total cost)
 
 // Logic:
 // Total cost = Number of weeks × Cost per week
@@ -253,7 +276,9 @@ int main() {
 // Input:
 // First line: T (1 ≤ T ≤ 6) — test cases
 // Next, T lines: One integer X (1 ≤ X ≤ 6)
-// Output: For each test case, print "YES" if X == 6, otherwise "NO" (case-insensitive)
+
+// Output:
+// For each test case, print "YES" if X == 6, otherwise "NO" (case-insensitive)
 
 // Logic:
 // If X == 6 → Can enter token → "YES"
@@ -292,8 +317,11 @@ int main() {
 // Chef has attempted Y of them.
 // Find how many problems are still unattempted.
 
-// Input: Two integers X and Y (1 ≤ Y ≤ X ≤ 1000)
-// Output: Print X - Y (number of unattempted problems)
+// Input:
+// Two integers X and Y (1 ≤ Y ≤ X ≤ 1000)
+
+// Output:
+// Print X - Y (number of unattempted problems)
 
 // Logic:
 // Unattempted = Total problems - Attempted problems
@@ -328,7 +356,9 @@ int main() {
 // Input:
 // First line: T (1 ≤ T ≤ 100)
 // Next, T lines: Two integers X and N (10 ≤ X ≤ 200, 0 ≤ N ≤ 10, X is multiple of 10)
-// Output: For each test case, print Chef's score.
+
+// Output:
+// For each test case, print Chef's score.
 
 // Logic:
 // Points per test case = X / 10
@@ -366,8 +396,11 @@ int main() {
 //   - "FOUND" otherwise
 // Given X, output the correct response.
 
-// Input: One integer X (100 ≤ X ≤ 999)
-// Output: "NOT FOUND" if X == 404, else "FOUND" (case-insensitive)
+// Input:
+// One integer X (100 ≤ X ≤ 999)
+
+// Output:
+// "NOT FOUND" if X == 404, else "FOUND" (case-insensitive)
 
 // Logic:
 // If X == 404 → Print "NOT FOUND"
@@ -400,8 +433,11 @@ int main() {
 // The calculator computes A + B correctly, but appends a '1' at the end of the result.
 // Given A and B, predict the calculator's output.
 
-// Input: Two integers A and B (1 ≤ A, B ≤ 50)
-// Output: Print (A + B) * 10 + 1
+// Input:
+// Two integers A and B (1 ≤ A, B ≤ 50)
+
+// Output:
+// Print (A + B) * 10 + 1
 
 // Logic:
 // Actual sum = A + B
@@ -434,7 +470,9 @@ int main() {
 // Input:
 // First line: T (1 ≤ T ≤ 200)
 // Next, T lines: Two integers N and X (1 ≤ X ≤ N ≤ 20)
-// Output: For each test case, print N - X
+
+// Output:
+// For each test case, print N - X
 
 // Logic:
 // Remaining donations = Total needed - Already collected
@@ -473,7 +511,9 @@ int main() {
 // Input:
 // First line: T (1 ≤ T ≤ 100)
 // Next, T lines: Two integers X and Y (1 ≤ X < Y ≤ 12)
-// Output: For each test case, print Y - X
+
+// Output:
+// For each test case, print Y - X
 
 // Logic:
 // Working hours = End time - Start time
@@ -512,7 +552,9 @@ int main() {
 // Input:
 // First line: T (1 ≤ T ≤ 1000)
 // Next, T lines: Two integers N and M (1 ≤ N, M ≤ 10^5)
-// Output: For each test case, print max(0, N - M)
+
+// Output:
+// For each test case, print max(0, N - M)
 
 // Logic:
 // Students without ticket = N - M, but never negative
@@ -555,7 +597,9 @@ int main() {
 // Input:
 // First line: T (1 ≤ T ≤ 10^4)
 // Next, T lines: One integer X (1 ≤ X ≤ 10^6)
-// Output: For each test case, print "YES" if 67 ≤ X ≤ 45000, else "NO" (case-insensitive)
+
+// Output:
+// For each test case, print "YES" if 67 ≤ X ≤ 45000, else "NO" (case-insensitive)
 
 // Logic:
 // If 67 <= X <= 45000 → "YES"
@@ -599,7 +643,9 @@ int main() {
 // Input:
 // First line: T (1 ≤ T ≤ 60)
 // Next, T lines: One integer X (1 ≤ X ≤ 60)
-// Output: For each test case, print "YES" if X ≥ 30, else "NO" (case-insensitive)
+
+// Output:
+// For each test case, print "YES" if X ≥ 30, else "NO" (case-insensitive)
 
 // Logic:
 // Chef reaches on time if he leaves at least 30 minutes early.
@@ -642,8 +688,11 @@ int main() {
 // But, team cannot have more than 8 people.
 // Chef's team has N people. Check if they are eligible.
 
-// Input: One integer N (1 ≤ N ≤ 10)
-// Output: Print "Yes" if 6 ≤ N ≤ 8, otherwise "No" (case-insensitive)
+// Input:
+// One integer N (1 ≤ N ≤ 10)
+
+// Output:
+// Print "Yes" if 6 ≤ N ≤ 8, otherwise "No" (case-insensitive)
 
 // Logic:
 // If N >= 6 AND N <= 8 → "Yes"
@@ -681,7 +730,9 @@ int main() {
 // Input:
 // Line 1: Two integers N and M (0 ≤ N, M ≤ 100)
 // Line 2: Two integers X and Y (0 ≤ X, Y ≤ 1000)
-// Output: Print total treats = (N * X) + (M * Y)
+
+// Output:
+// Print total treats = (N * X) + (M * Y)
 
 // Logic:
 // Total treats = (people in Bones × treats per person) + (people in Blood × treats per person)
@@ -720,7 +771,9 @@ int main() {
 // Input:
 // First line: T (1 ≤ T ≤ 1000)
 // Next, T lines: Two integers X and Y (100 ≤ X, Y ≤ 200, X ≠ Y)
-// Output: For each test case, print "A" if Alice taller, "B" if Bob taller (case-insensitive)
+
+// Output:
+// For each test case, print "A" if Alice taller, "B" if Bob taller (case-insensitive)
 
 // Logic:
 // If X > Y → Alice is taller → "A"
@@ -761,7 +814,9 @@ int main() {
 // Input:
 // First line: T (1 ≤ T ≤ 10)
 // Next, T lines: Two integers X and Y (50 ≤ Y < X ≤ 200)
-// Output: For each test case, print X - Y
+
+// Output:
+// For each test case, print X - Y
 
 // Logic:
 // Runs needed to win = Target - Current score
@@ -800,7 +855,9 @@ int main() {
 // Input:
 // First line: T (1 ≤ T ≤ 1000)
 // Next, T lines: Two integers X and Y (0 ≤ X, Y ≤ 100)
-// Output: For each test case, print max(X, Y)
+
+// Output:
+// For each test case, print max(X, Y)
 
 // Logic:
 // Final score = the higher score between X and Y
@@ -843,8 +900,11 @@ int main() {
 // He wants to pay the same amount using ₹500 notes only.
 // Find how many ₹500 notes he needs.
 
-// Input: One integer N (1 ≤ N ≤ 100)
-// Output: Print number of ₹500 notes = N * 4
+// Input:
+// One integer N (1 ≤ N ≤ 100)
+
+// Output:
+// Print number of ₹500 notes = N * 4
 
 // Logic:
 // Total amount = N * 2000
@@ -877,7 +937,9 @@ int main() {
 // Input:
 // First line: T (1 ≤ T ≤ 1000)
 // Next, T lines: Two integers X and H (1 ≤ X, H ≤ 100)
-// Output: For each test case, print "YES" if X ≥ H, else "NO" (case-insensitive)
+
+// Output:
+// For each test case, print "YES" if X ≥ H, else "NO" (case-insensitive)
 
 // Logic:
 // If X >= H → Can go → "YES"
@@ -920,7 +982,9 @@ int main() {
 // Input:
 // First line: T (1 ≤ T ≤ 100)
 // Next, T lines: One integer N (1 ≤ N ≤ 100)
-// Output: For each test case, print "YES" if N % 3 == 0, else "NO" (case-insensitive)
+
+// Output:
+// For each test case, print "YES" if N % 3 == 0, else "NO" (case-insensitive)
 
 // Logic:
 // Equal distribution possible only if N is divisible by 3
@@ -963,7 +1027,9 @@ int main() {
 // Input:
 // First line: T (1 ≤ T ≤ 100)
 // Next, T lines: Two integers X and Y (1 ≤ X, Y ≤ 100)
-// Output: For each test case, print "YES" if X ≥ Y, else "NO" (case-insensitive)
+
+// Output:
+// For each test case, print "YES" if X ≥ Y, else "NO" (case-insensitive)
 
 // Logic:
 // If X >= Y → Chef can pay → "YES"
@@ -1006,7 +1072,9 @@ int main() {
 // Input:
 // First line: T (1 ≤ T ≤ 10)
 // Next, T lines: One integer N (1 ≤ N ≤ 10)
-// Output: For each test case, print "Yes" if N is even, "No" if odd (case-insensitive)
+
+// Output:
+// For each test case, print "Yes" if N is even, "No" if odd (case-insensitive)
 
 // Logic:
 // Equal division possible only if N is divisible by 2
@@ -1050,7 +1118,9 @@ int main() {
 // Input:
 // First line: T (1 ≤ T ≤ 1000)
 // Next, T lines: Two integers X and Y (1 ≤ Y ≤ X ≤ 1000)
-// Output: For each test case, print (10 * X) + (90 * Y)
+
+// Output:
+// For each test case, print (10 * X) + (90 * Y)
 
 // Logic:
 // Total prize = (10 × X) + (90 × Y)
@@ -1088,7 +1158,9 @@ int main() {
 // Input:
 // First line: T (1 ≤ T ≤ 100)
 // Next, T lines: Two integers N and M (1 ≤ N, M ≤ 100)
-// Output: For each test case, print N * M
+
+// Output:
+// For each test case, print N * M
 
 // Logic:
 // Total words = Number of pages × Words per page
@@ -1127,7 +1199,9 @@ int main() {
 // Input:
 // First line: T (1 ≤ T ≤ 100)
 // Next, T lines: One integer X (0 ≤ X ≤ 100)
-// Output: For each test case, print "YES" if X >= 80, else "NO" (case-insensitive)
+
+// Output:
+// For each test case, print "YES" if X >= 80, else "NO" (case-insensitive)
 
 // Logic:
 // If X >= 80 → Optimal → "YES"
@@ -1170,7 +1244,9 @@ int main() {
 // Input:
 // First line: T (1 ≤ T ≤ 100)
 // Next, T lines: Two integers X and Y (1 ≤ X, Y ≤ 10)
-// Output: For each test case, print "YES" if Tom can catch Jerry, else "NO" (case-insensitive)
+
+// Output:
+// For each test case, print "YES" if Tom can catch Jerry, else "NO" (case-insensitive)
 
 // Logic:
 // Tom can catch Jerry only if his speed is strictly greater than Jerry's.
@@ -1215,7 +1291,9 @@ int main() {
 // Input:
 // First line: T (1 ≤ T ≤ 25)
 // Next, T lines: One integer X (25 ≤ X ≤ 50)
-// Output: For each test case, print Chefina's age = X - 10
+
+// Output:
+// For each test case, print Chefina's age = X - 10
 
 // Logic:
 // Age difference = 20 - 10 = 10 years (constant)
@@ -1255,7 +1333,9 @@ int main() {
 // Input:
 // First line: T (1 ≤ T ≤ 100)
 // Next, T lines: Two integers N and X (1 ≤ N, X ≤ 10)
-// Output: For each test case, print "YES" if N ≤ X, else "NO" (case-insensitive)
+
+// Output:
+// For each test case, print "YES" if N ≤ X, else "NO" (case-insensitive)
 
 // Logic:
 // Party can be hosted only if number of people ≤ capacity
@@ -1291,7 +1371,7 @@ int main() {
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
 
 
-// 🟢 Problem: Second Max of Three Numbers
+// 🟢 Problem 300: Second Max of Three Numbers
 // You are given N test cases. Each test case consists of three distinct integers.
 // For each triple, find and print the second-largest (second-maximum) number.
 
@@ -1357,6 +1437,7 @@ int main() {
 // Input:
 // First line: T (1 ≤ T ≤ 500)
 // Next, T lines: Two integers X and Y (1 ≤ X, Y ≤ 100)
+
 // Output: For each test case:
 //   - "PROFIT" if Y > X
 //   - "LOSS" if Y < X
@@ -1409,7 +1490,9 @@ int main() {
 // Input:
 // First line: T (1 ≤ T ≤ 100)
 // Next, T lines: One integer X (1 ≤ X ≤ 1000)
-// Output: For each test case, print "YES" if (4 * X) <= 1000, else "NO" (case-insensitive)
+
+// Output:
+// For each test case, print "YES" if (4 * X) <= 1000, else "NO" (case-insensitive)
 
 // Logic:
 // Total cost = 4 * X; OR, X <= 250 (1000 / 4)
@@ -1453,7 +1536,9 @@ int main() {
 // Input:
 // First line: T (1 ≤ T ≤ 1000)
 // Next, T lines: Two integers X and Y (0 ≤ X, Y ≤ 100)
-// Output: For each test case, print max(0, X - Y)
+
+// Output:
+// For each test case, print max(0, X - Y)
 
 // Logic:
 // Required chairs = X
@@ -1754,6 +1839,52 @@ int main() {
     if (X < 3) cout << "GOLD";
     else if (X >= 3 && X < 6) cout << "SILVER";
     else cout << "BRONZE";
+    
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+// 🟢 Problem 320: Just One More Episode
+// Chef has an exam starting in exactly X minutes.
+// Each episode of his show is 24 minutes long.
+// He wants to start watching one episode now.
+// Determine if he can finish it strictly before the exam starts (i.e., in less than X minutes).
+
+// Input:
+// First line: T (1 ≤ T ≤ 100) → number of test cases
+// Next T lines: one integer X (1 ≤ X ≤ 100) → minutes until exam
+
+// Output:
+// For each test case, print "YES" if he finishes strictly before the exam (X > 24)
+// Otherwise print "NO"
+// (Case-insensitive: Yes, YES, yes, etc. all accepted)
+
+// Logic:
+// Episode takes exactly 24 minutes.
+// To finish strictly before exam → need X > 24
+// If X ≤ 24 → he finishes at or after exam start → "NO"
+
+// Examples:
+// 30 → 30 > 24 → Yes
+// 23 → 23 ≤ 24 → No
+// 60 → 60 > 24 → Yes
+// 24 → 24 ≤ 24 → No (finishes exactly at start time, not strictly before)
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+    
+    while (T--) {
+        int X;
+        cin >> X;
+
+        cout << (X > 24 ? "Yes" : "No") << '\n';
+    }
     
     return 0;
 }
