@@ -1674,3 +1674,48 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+// 🟢 Problem 319: Waiting Time
+// Chef is told the secret information will be revealed after exactly K weeks.
+// 1 week = 7 days → total wait time = K * 7 days
+// X days have already passed (and it's guaranteed X < 7*K, i.e., info not revealed yet)
+// Find how many more days Chef has to wait.
+
+// Input:
+// First line: T (1 ≤ T ≤ 500)
+// Next, T lines: two integers K and X (1 ≤ K ≤ 10, 1 ≤ X < 7*K)
+
+// Output:
+// For each test case, print the number of remaining days = (K * 7 - X)
+
+// Logic:
+// Total days to wait = K weeks × 7 days/week
+// Already waited = X days
+// Remaining = total - already waited
+// → Answer = 7*K - X
+
+// Examples:
+// K=1, X=5 → 7*1 - 5 = 2
+// K=1, X=6 → 7*1 - 6 = 1
+// K=1, X=1 → 7*1 - 1 = 6
+// K=1, X=2 → 7*1 - 2 = 5
+
+#include <iostream>
+using namespace std;
+    
+int main() {
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int K, X;
+        cin >> K >> X;
+
+        cout << (7 * K) - X << '\n';
+    }
+
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
