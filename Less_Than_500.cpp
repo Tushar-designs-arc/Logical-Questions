@@ -1625,3 +1625,52 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+// 🟢 Problem 316: Messi vs Ronaldo
+// In Chefland football:
+// - Each goal = 2 points
+// - Each assist = 1 point
+// Given:
+//   Messi: A goals, B assists
+//   Ronaldo: X goals, Y assists
+// Compare their total points and decide who has more.
+
+// Input:
+// Single line: four integers A B X Y (0 ≤ A,B,X,Y ≤ 100)
+
+// Output:
+// "Messi"   if Messi's points > Ronaldo's points
+// "Ronaldo" if Ronaldo's points > Messi's points
+// "Equal"   if both have same points
+// (Case-insensitive output accepted)
+
+// Logic:
+// Compute:
+//   messi_points = A * 2 + B
+//   ronaldo_points = X * 2 + Y
+// Then compare the two values.
+
+// Examples:
+// 40 30 50 10 → 110 vs 110 → Equal
+// 91 22 60 30 → 204 vs 150 → Messi
+// 60 30 80 20 → 150 vs 180 → Ronaldo
+
+#include <iostream>
+using namespace std;
+    
+int main() {
+    int A, B, X, Y;
+    cin >> A >> B >> X >> Y;
+
+    if (((2 * A) + B) > ((2 * X) + Y))
+        cout << "Messi";
+    else if ((A + B) < (X + Y))
+        cout << "Ronaldo";
+    else
+        cout << "Equal";
+
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
