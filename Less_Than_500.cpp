@@ -1719,3 +1719,43 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+// 🟢 Problem 319: October Marathon
+// Chefina runs a 30 km marathon in X hours.
+// Medal rules:
+// - X < 3          → GOLD
+// - 3 ≤ X < 6      → SILVER
+// - X ≥ 6          → BRONZE
+
+// Input:
+// Single integer X (1 ≤ X ≤ 10) → hours taken by Chefina
+
+// Output:
+// Print "GOLD", "SILVER", or "BRONZE" (case-insensitive)
+
+// Logic:
+// Just check the value of X against the boundaries:
+//   if (X < 3)           → GOLD
+// else if (X < 6)      → SILVER
+// else                 → BRONZE
+
+// Examples:
+// 2 → GOLD
+// 5 → SILVER
+// 6 → BRONZE
+
+#include <iostream>
+using namespace std;
+    
+int main() {
+    int X; cin >> X;
+
+    if (X < 3) cout << "GOLD";
+    else if (X >= 3 && X < 6) cout << "SILVER";
+    else cout << "BRONZE";
+    
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
