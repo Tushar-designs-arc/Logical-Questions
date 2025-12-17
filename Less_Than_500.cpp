@@ -1910,7 +1910,7 @@ int main() {
 
 // Examples:
 // 10 30 → 30 / 10 = 3
-// 6  41 → 41 / 6  = 6  (6*6=36 ≤41, 7*6=42>41)
+// 6  41 → 41 / 6  = 6  (6*6 = 36 ≤ 41, 7*6 = 42 > 41)
 // 50  2 →  2 / 50 = 0
 
 #include <iostream>
@@ -1921,18 +1921,58 @@ int main() {
     cin >> T;
     
     while (T--) {
-        int X, Y, attacks = 0;
+        int X, Y;
         cin >> X >> Y;
 
-        // while (Y >= X) {
-        //     attacks++;
-        //     Y -= X;
-        // }
-        
-        // cout << attacks << '\n';
-
-        // OR,
         cout << Y / X << '\n';
+    }
+    
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+// 🟢 Problem 328: Rain in Chefland
+// Rainfall rate is X mm per hour. Categorize it as:
+// - LIGHT    if X < 3
+// - MODERATE if 3 ≤ X < 7
+// - HEAVY    if X ≥ 7
+
+// Input:
+// First line: T (1 ≤ T ≤ 20) → number of test cases
+// Next T lines: one integer X (1 ≤ X ≤ 20) → rainfall rate in mm/hour
+
+// Output:
+// For each test case, print "LIGHT", "MODERATE", or "HEAVY"
+// (Case-insensitive: light, Light, HEAVY, heavy etc. all accepted)
+
+// Logic:
+// Simple if-else chain based on the given thresholds:
+//   if (X < 3)        → LIGHT
+//   else if (X < 7)   → MODERATE
+//   else              → HEAVY
+
+// Examples:
+// 1 → LIGHT
+// 20 → HEAVY
+// 3 → MODERATE
+// 7 → HEAVY
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+    
+    while (T--) {
+        int X;
+        cin >> X;
+
+        if (X < 3) cout << "LIGHT" << '\n';
+        else if (X < 7) cout << "MODERATE" << '\n';
+        else cout << "HEAVY" << '\n';
     }
     
     return 0;
