@@ -1979,3 +1979,52 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+// 🟢 Problem 330: Bidding
+// Alice bids A, Bob bids B, Charlie bids C.
+// All three amounts are distinct.
+// The one with the highest bid wins the auction.
+
+// Input:
+// First line: T (1 ≤ T ≤ 1000) → number of test cases
+// Next T lines: three distinct integers A B C (1 ≤ A,B,C ≤ 1000)
+
+// Output:
+// For each test case, print the name of the winner: "Alice", "Bob", or "Charlie"
+// (Case-insensitive: alice, ALICE, AlIcE etc. all accepted)
+
+// Logic:
+// Find the maximum among A, B, C and print the corresponding name.
+// Since values are distinct, no ties possible.
+
+// Approach:
+// Compare the three values:
+//   if (A > B && A > C) → Alice
+//   else if (B > A && B > C) → Bob
+//   else → Charlie
+
+// Examples:
+// 200 100 400 → max=400 → Charlie
+// 155 1000 566 → max=1000 → Bob
+// 736 234 470 → max=736 → Alice
+// 124 67 2 → max=124 → Alice
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+    
+    while (T--) {
+        int A, B, C;
+        cin >> A >> B >> C;
+
+        cout << ( A > B ? (A > C ? "Alice" : "Charlie") : (B > C ? "Bob" : "Charlie") ) << '\n';
+    }
+    
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
