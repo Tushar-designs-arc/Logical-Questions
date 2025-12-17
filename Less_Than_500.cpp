@@ -1890,3 +1890,52 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+// 🟢 Problem 327: Mana Points
+// Chefario has Y mana points.
+// Each special attack costs X mana points.
+// Find the maximum number of special attacks: floor(Y / X)
+
+// Input:
+// First line: T (1 ≤ T ≤ 10^5) → number of test cases
+// Next T lines: two integers X Y (1 ≤ X ≤ 100, 1 ≤ Y ≤ 1000)
+
+// Output:
+// For each test case, print the integer Y / X
+
+// Logic:
+// Use integer division: attacks = Y / X
+// (In C++, int / int automatically floors the result)
+
+// Examples:
+// 10 30 → 30 / 10 = 3
+// 6  41 → 41 / 6  = 6  (6*6=36 ≤41, 7*6=42>41)
+// 50  2 →  2 / 50 = 0
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+    
+    while (T--) {
+        int X, Y, attacks = 0;
+        cin >> X >> Y;
+
+        // while (Y >= X) {
+        //     attacks++;
+        //     Y -= X;
+        // }
+        
+        // cout << attacks << '\n';
+
+        // OR,
+        cout << Y / X << '\n';
+    }
+    
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
