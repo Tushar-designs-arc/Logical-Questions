@@ -2028,3 +2028,52 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+// 🟢 Problem 335: Overspeeding Fine
+// Chef drives at speed X km/hour.
+// Fine rules:
+// - X ≤ 70          → No fine (0)
+// - 70 < X ≤ 100    → Rs 500
+// - X > 100         → Rs 2000
+
+// Input:
+// First line: T (1 ≤ T ≤ 200) → number of test cases
+// Next T lines: one integer X (1 ≤ X ≤ 200) → speed in km/hour
+
+// Output:
+// For each test case, print the fine amount: 0, 500, or 2000
+
+// Logic:
+// Simple if-else chain:
+//   if (X <= 70)        → 0
+//   else if (X <= 100)  → 500
+//   else                → 2000
+
+// Examples:
+// 40  → 0
+// 110 → 2000
+// 70  → 0
+// 100 → 500
+// 69  → 0
+// 101 → 2000
+// 85  → 500
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+    
+    while (T--) {
+        int X;
+        cin >> X;
+
+        cout << ( X > 70 ? (X > 100 ? 2000 : 500) : 0 ) << '\n';
+    }
+    
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
