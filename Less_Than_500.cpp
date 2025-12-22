@@ -2121,3 +2121,49 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+// 🟢 Problem 342: Passes for Fair
+// Chef has N friends and wants to go to the fair with them.
+// Total people = N (friends) + 1 (Chef) = N + 1
+// He has K passes.
+// Each person needs exactly one pass (passes are non-shareable).
+// Determine if Chef + all N friends can enter.
+
+// Input:
+// First line: T (1 ≤ T ≤ 100) → number of test cases
+// Next T lines: two integers N K (1 ≤ N,K ≤ 100)
+
+// Output:
+// For each test case, print "YES" if K >= (N + 1), else "NO"
+// (Case-insensitive: yes, YES, YeS etc. all accepted)
+
+// Logic:
+// Total passes needed = N + 1 (for Chef and all friends)
+// If K >= N + 1 → YES
+// Else → NO
+
+// Examples:
+// 5 8 → 5+1=6 ≤8 → YES
+// 6 3 → 6+1=7 >3 → NO
+// 2 2 → 2+1=3 >2 → NO
+// 1 2 → 1+1=2 ≤2 → YES
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+    
+    while (T--) {
+        int N, K;
+        cin >> N >> K;
+
+        cout << (K > N ? "Yes" : "No") << '\n';
+    }
+    
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
