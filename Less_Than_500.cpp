@@ -2167,3 +2167,48 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+// 🟢 Problem 343: Read Pages
+// Chef has a book with N pages.
+// He can read at most X pages per day.
+// He has Y days available.
+// Determine if he can finish the entire book.
+
+// Input:
+// First line: T (1 ≤ T ≤ 1000) → number of test cases
+// Next T lines: three integers N X Y (1 ≤ N ≤ 100, 1 ≤ X,Y ≤ 10)
+
+// Output:
+// For each test case, print "YES" if he can finish the book, "NO" otherwise
+// (Case-insensitive: Yes, YES, yes, yEs etc. all accepted)
+
+// Logic:
+// Maximum pages he can read in Y days = X * Y
+// He can finish the book if X * Y >= N
+// → Check if (X * Y >= N)
+
+// Examples:
+// 5 2 3 → 2*3 = 6 ≥ 5 → YES
+// 10 3 3 → 3*3 = 9 < 10 → NO
+// 7 7 1 → 7*1 = 7 ≥ 7 → YES
+// 3 2 1 → 2*1 = 2 < 3 → NO
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+    
+    while (T--) {
+        int N, X, Y;
+        cin >> N >> X >> Y;
+
+        cout << (N <= X * Y ? "Yes" : "No") << '\n';
+    }
+    
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
