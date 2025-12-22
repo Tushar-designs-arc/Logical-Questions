@@ -2212,3 +2212,46 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+// 🟢 Problem 347: Couple Game
+// There are G girls and B boys (B > G).
+// Teams must be of size 2: exactly 1 girl + 1 boy.
+// Find the minimum number of boys who cannot participate.
+
+// Input:
+// First line: T (1 ≤ T ≤ 100) → number of test cases
+// Next T lines: two integers G B (1 ≤ G < B ≤ 100)
+
+// Output:
+// For each test case, print the number of boys left out.
+
+// Logic:
+// The maximum number of teams possible is limited by the number of girls → G teams.
+// Each team uses 1 girl and 1 boy → G boys get to participate.
+// Total boys left out = B - G
+// Since B > G, this is always positive.
+
+// Examples:
+// 1 3 → 3 - 1 = 2
+// 2 4 → 4 - 2 = 2
+// 3 10 → 10 - 3 = 7
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+    
+    while (T--) {
+        int G, B;
+        cin >> G >> B;
+
+        cout << B - G << '\n';
+    }
+    
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
