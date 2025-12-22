@@ -2077,3 +2077,47 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+// 🟢 Problem 337: Chess Time
+// Chef has N hours of free time.
+// Each complete chess game takes exactly 20 minutes.
+// Find the maximum number of complete games he can play.
+
+// Input:
+// First line: T (1 ≤ T ≤ 10) → number of test cases
+// Next T lines: one integer N (1 ≤ N ≤ 10) → hours available
+
+// Output:
+// For each test case, print the maximum number of games = N * 3
+// (since 1 hour = 60 minutes → 60 / 20 = 3 games per hour)
+
+// Logic:
+// Total minutes available = N * 60
+// Games = floor(total minutes / 20) = (N * 60) / 20 = N * 3
+// Since 60 is exactly divisible by 20, no remainder.
+
+// Examples:
+// N=1  → 1*3 = 3
+// N=10 → 10*3 = 30
+// N=7  → 7*3 = 21
+// N=3  → 3*3 = 9
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+    
+    while (T--) {
+        int N;
+        cin >> N;
+
+        cout << (N * 60) / 20 << '\n';
+    }
+    
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
