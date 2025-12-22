@@ -2255,3 +2255,42 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+// 🟢 Problem 347: Air Quality Index
+// Government wants average AQI strictly below 100 (i.e., < 100).
+// Chef measures AQI as X.
+// Determine if the government succeeded.
+
+// Input:
+// Single integer X (1 ≤ X ≤ 150) → measured AQI
+
+// Output:
+// "YES" if X < 100
+// "NO"  if X ≥ 100
+// (Case-insensitive: Yes, YES, yes, yEs etc. all accepted)
+
+// Logic:
+// Simple comparison:
+//   if (X < 100) → YES
+//   else         → NO
+
+// Examples:
+// 50  → < 100 → YES
+// 100 → ≥ 100 → NO
+// 99  → < 100 → YES
+// 145 → ≥ 100 → NO
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int X;
+    cin >> X;
+
+    cout << (X < 100 ? "Yes" : "No") << '\n';
+    
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
