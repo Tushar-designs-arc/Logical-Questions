@@ -2422,3 +2422,45 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+// 🟢 Problem 350: Chef and Chapters
+// Chef has X courses.
+// Each course has Y units.
+// Each unit has Z chapters.
+// Find the total number of chapters to study.
+
+// Input:
+// First line: T (1 ≤ T ≤ 1000) → number of test cases
+// Next T lines: three integers X Y Z (1 ≤ X,Y,Z ≤ 1000)
+
+// Output:
+// For each test case, print the total chapters = X * Y * Z
+
+// Logic:
+// Total chapters = (courses) × (units per course) × (chapters per unit)
+// → X * Y * Z
+
+// Examples:
+// 1 1 1 → 1*1*1 = 1
+// 2 1 2 → 2*1*2 = 4
+// 1 2 3 → 1*2*3 = 6
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+    
+    while (T--) {
+        int X, Y, Z;
+        cin >> X >> Y >> Z;
+
+        cout << (X * Y) * Z << '\n';
+    }
+    
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
