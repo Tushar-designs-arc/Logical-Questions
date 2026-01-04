@@ -2336,3 +2336,46 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+// 🟢 Problem 348: Sleep deprivation
+// A person is sleep deprived if they slept strictly less than 7 hours in a day.
+// Chef slept X hours yesterday.
+// Determine if he is sleep deprived.
+
+// Input:
+// First line: T (1 ≤ T ≤ 20) → number of test cases
+// Next T lines: one integer X (1 ≤ X ≤ 15) → hours slept
+
+// Output:
+// For each test case, print "YES" if X < 7, otherwise "NO"
+// (Case-insensitive: yes, YES, YeS etc. all accepted)
+
+// Logic:
+// Simple comparison:
+//   if (X < 7) → YES
+//   else       → NO
+
+// Examples:
+// 4 → < 7 → YES
+// 7 → ≥ 7 → NO
+// 10 → ≥ 7 → NO
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+    
+    while (T--) {
+        int X;
+        cin >> X;
+
+        cout << (X < 7 ? "Yes" : "No") << '\n';
+    }
+    
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
