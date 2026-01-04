@@ -2294,3 +2294,45 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+// 🟢 Problem 348: Fever
+// Chef's body temperature is X °F.
+// He has fever if temperature is strictly greater than 98 °F.
+
+// Input:
+// First line: T (1 ≤ T ≤ 10) → number of test cases
+// Next T lines: one integer X (94 ≤ X ≤ 103) → temperature in °F
+
+// Output:
+// For each test case, print "YES" if X > 98, otherwise "NO"
+// (Case-insensitive: yes, YES, YeS etc. all accepted)
+
+// Logic:
+// Simple comparison:
+//   if (X > 98) → YES
+//   else        → NO
+
+// Examples:
+// 98  → ≤ 98 → NO
+// 100 → > 98 → YES
+// 96  → ≤ 98 → NO
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+    
+    while (T--) {
+        int X;
+        cin >> X;
+
+        cout << (X > 98 ? "Yes" : "No") << '\n';
+    }
+    
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
