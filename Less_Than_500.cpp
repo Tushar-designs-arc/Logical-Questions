@@ -2464,3 +2464,42 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+// 🟢 Problem 351: Water Requirement
+// Chef's water cooler requires 2 liters of water per hour to cool.
+// Given N hours, find the total water required.
+
+// Input:
+// First line: T (1 ≤ T ≤ 1000) → number of test cases
+// Next T lines: one integer N (1 ≤ N ≤ 1000) → number of hours
+
+// Output:
+// For each test case, print the total water in liters = 2 * N
+
+// Logic:
+// Water required = hours × 2 liters per hour
+// → Answer = 2 * N
+
+// Examples:
+// N=1 → 2*1 = 2
+// N=2 → 2*2 = 4
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+    
+    while (T--) {
+        int N;
+        cin >> N;
+
+        cout << 2 * N << '\n';
+    }
+    
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
