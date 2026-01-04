@@ -2379,3 +2379,46 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+// 🟢 Problem 349: MATH1 Enrolment
+// There are X seats available for MATH-1 course.
+// Y students are interested in enrolling.
+// Find the minimum number of extra seats needed so that all Y students can enroll.
+
+// Input:
+// First line: T (1 ≤ T ≤ 100) → number of test cases
+// Next T lines: two integers X Y (1 ≤ X,Y ≤ 10^5)
+
+// Output:
+// For each test case, print the minimum extra seats needed.
+// If X >= Y → no extra seats needed → 0
+// If X < Y  → need (Y - X) extra seats
+
+// Logic:
+// Extra seats = max(0, Y - X)
+
+// Examples:
+// 1 1   → max(0, 1-1) = 0
+// 12 34 → max(0, 34-12) = 22
+// 50 49 → max(0, 49-50) = 0
+// 49 50 → max(0, 50-49) = 1
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+    
+    while (T--) {
+        int X, Y;
+        cin >> X >> Y;
+
+        cout << (Y > X ? Y - X : 0) << '\n';
+    }
+    
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
