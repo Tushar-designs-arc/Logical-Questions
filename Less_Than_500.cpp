@@ -2590,3 +2590,46 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+// 🟢 Problem 358: Final Population
+// Initial population: X million
+// Y million people leave the town
+// Z million people immigrate to the town
+// Find the final population.
+
+// Input:
+// First line: T (1 ≤ T ≤ 100) → number of test cases
+// Next T lines: three integers X Y Z (1 ≤ X,Y,Z ≤ 10, Y ≤ X)
+
+// Output:
+// For each test case, print the final population = X - Y + Z
+
+// Logic:
+// Population change: subtract those who left, add those who immigrated
+// → Final = X - Y + Z
+
+// Examples:
+// 3 1 2 → 3 - 1 + 2 = 4
+// 2 2 2 → 2 - 2 + 2 = 2
+// 4 1 8 → 4 - 1 + 8 = 11
+// 10 1 10 → 10 - 1 + 10 = 19
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+    
+    while (T--) {
+        int X, Y, Z;
+        cin >> X >> Y >> Z;
+
+        cout << X - Y + Z << '\n';
+    }
+    
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
