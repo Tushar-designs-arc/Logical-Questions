@@ -2503,3 +2503,45 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+// 🟢 Problem 352: Lunchtime
+// Chef has lunch only between 1 pm and 4 pm (both inclusive).
+// Given current time X pm (1 ≤ X ≤ 12), determine if it's lunchtime.
+
+// Input:
+// First line: T (1 ≤ T ≤ 12) → number of test cases
+// Next T lines: one integer X (1 ≤ X ≤ 12) → current time in pm
+
+// Output:
+// For each test case, print "YES" if 1 ≤ X ≤ 4, otherwise "NO"
+// (Case-insensitive: yes, YES, YeS etc. all accepted)
+
+// Logic:
+// Lunchtime if X is 1, 2, 3, or 4
+// → if (X >= 1 && X <= 4) → YES
+//   else                  → NO
+
+// Examples:
+// 1 → YES
+// 7 → NO
+// 3 → YES
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+    
+    while (T--) {
+        int X;
+        cin >> X;
+
+        cout << (X >= 1 && X <= 4 ? "Yes" : "No") << '\n';
+    }
+    
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
