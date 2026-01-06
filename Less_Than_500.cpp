@@ -2633,3 +2633,48 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+// 🟢 Problem 363: Chef gives Party
+// Chef has N friends.
+// Each burger costs X rupees.
+// Chef has K rupees in total.
+// Determine if he can buy one burger for each friend (including enough money for all).
+
+// Input:
+// First line: T (1 ≤ T ≤ 1000) → number of test cases
+// Next T lines: three integers N X K (1 ≤ N,X ≤ 100, 1 ≤ K ≤ 10000)
+
+// Output:
+// For each test case, print "YES" if K >= N * X, otherwise "NO"
+// (Case-insensitive: yes, YES, YeS etc. all accepted)
+
+// Logic:
+// Total cost needed = N * X
+// If K >= total cost → YES
+// Else → NO
+
+// Examples:
+// 5 10 70  → 5*10=50 ≤70 → YES
+// 5 10 40  → 5*10=50 >40 → NO
+// 10 40 400 → 10*40=400 ≤400 → YES
+// 14 14 150 → 14*14=196 >150 → NO
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+    
+    while (T--) {
+        int N, X, K;
+        cin >> N >> X >> K;
+
+        cout << (K >= (N * X) ? "Yes" : "No") << '\n';
+    }
+    
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
