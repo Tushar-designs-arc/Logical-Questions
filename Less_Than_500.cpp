@@ -2545,3 +2545,48 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+// 🟢 Problem 357: Good Investment or Not
+// Chef invests at interest rate X% per annum.
+// Current inflation rate is Y% per annum.
+// Investment is good if interest rate >= 2 * inflation rate (X >= 2*Y)
+
+// Input:
+// First line: T (1 ≤ T ≤ 400) → number of test cases
+// Next T lines: two integers X Y (1 ≤ X,Y ≤ 20)
+
+// Output:
+// For each test case, print "YES" if X >= 2*Y, otherwise "NO"
+// (Case-insensitive: Yes, yes, yES etc. all accepted)
+
+// Logic:
+// Simple comparison:
+//   if (X >= 2 * Y) → YES
+//   else            → NO
+
+// Examples:
+// 7 4  → 7 >= 8? No → NO
+// 6 3  → 6 >= 6? Yes → YES
+// 2 4  → 2 >= 8? No → NO
+// 10 10 → 10 >= 20? No → NO
+// 20 1 → 20 >= 2? Yes → YES
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+    
+    while (T--) {
+        int X, Y;
+        cin >> X >> Y;
+
+        cout << (X >= (2 * Y) ? "Yes" : "No") << '\n';
+    }
+    
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
