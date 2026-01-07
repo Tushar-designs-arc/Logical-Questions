@@ -2678,3 +2678,48 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+// 🟢 Problem 364: Time Complexity
+// Algorithm A uses X comparisons to sort an array.
+// Algorithm B uses Y comparisons to sort the same array.
+// A has more time complexity than B if A uses strictly more comparisons than B.
+// Find whether A has more time complexity than B.
+
+// Input:
+// First line: T (1 ≤ T ≤ 100) → number of test cases
+// Next T lines: two integers X Y (1 ≤ X,Y ≤ 100)
+
+// Output:
+// For each test case, print "YES" if X > Y, otherwise "NO"
+// (Case-insensitive: Yes, YES, yes, yEs etc. all accepted)
+
+// Logic:
+// Simply check if X > Y
+// - If X > Y → YES (A has more time complexity)
+// - Else     → NO  (A does not have more time complexity)
+
+// Examples:
+// 9 9  → 9 not > 9 → NO
+// 15 7 → 15 > 7 → YES
+// 10 19 → 10 not > 19 → NO
+// 21 20 → 21 > 20 → YES
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+    
+    while (T--) {
+        int X, Y;
+        cin >> X >> Y;
+
+        cout << (X > Y ? "Yes" : "No") << '\n';
+    }
+    
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
