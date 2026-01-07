@@ -2766,3 +2766,47 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+// 🟢 Problem 374: Car Trip
+// Chef rents a car for the whole day.
+// Cost is 10 Rs per km, but he must pay for at least 300 km even if he drives less.
+// If the car travels X km, find the total cost.
+
+// Input:
+// First line: T (1 ≤ T ≤ 100) → number of test cases
+// Next T lines: one integer X (1 ≤ X ≤ 1000) → km travelled
+
+// Output:
+// For each test case, print the cost = 10 * max(X, 300)
+
+// Logic:
+// Effective km to pay for = maximum of X and 300
+// Total cost = effective km * 10
+// → cost = 10 * max(X, 300)
+
+// Examples:
+// 800 → max(800,300)=800 → 800*10 = 8000
+// 3   → max(3,300)=300   → 300*10 = 3000
+// 299 → max(299,300)=300 → 300*10 = 3000
+// 301 → max(301,300)=301 → 301*10 = 3010
+// 300 → max(300,300)=300 → 300*10 = 3000
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+    
+    while (T--) {
+        int X;
+        cin >> X;
+
+        cout << (X > 300 ? 10 * X : 3000) << '\n';
+    }
+    
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
