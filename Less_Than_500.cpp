@@ -2855,3 +2855,46 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+// 🟢 Problem 382: Six Friends
+// Six friends need accommodation.
+// Options:
+// - Three double rooms → each holds 2 people → total 6 people, cost = 3 * X
+// - Two triple rooms   → each holds 3 people → total 6 people, cost = 2 * Y
+// Find the minimum cost between these two options.
+
+// Input:
+// First line: T (1 ≤ T ≤ 100) → number of test cases
+// Next T lines: two integers X Y (1 ≤ X < Y ≤ 100)
+
+// Output:
+// For each test case, print the minimum cost: min(3*X, 2*Y)
+
+// Logic:
+// Only two possible ways to accommodate exactly 6 people.
+// Compute both costs and take the smaller one.
+
+// Examples:
+// 10 15 → min(3*10=30, 2*15=30) = 30
+// 6 8   → min(3*6=18,  2*8=16)  = 16
+// 4 8   → min(3*4=12,  2*8=16)  = 12
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+    
+    while (T--) {
+        int X, Y;
+        cin >> X >> Y;
+
+        cout << ((3 * X) < (2 * Y) ? 3 * X : 2 * Y) << '\n';
+    }
+    
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
