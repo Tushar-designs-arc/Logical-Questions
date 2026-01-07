@@ -2723,3 +2723,46 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+// 🟢 Problem 373: Interior Design
+// Chef has two interior design styles to choose from:
+// Style 1: Tiling floor X1 rupees + Painting walls Y1 rupees → total = X1 + Y1
+// Style 2: Tiling floor X2 rupees + Painting walls Y2 rupees → total = X2 + Y2
+// Chef will choose the style with the lower total cost.
+
+// Input:
+// First line: T (1 ≤ T ≤ 100) → number of test cases
+// Next T lines: four integers X1 Y1 X2 Y2 (1 ≤ X1,Y1,X2,Y2 ≤ 100)
+
+// Output:
+// For each test case, print the minimum cost: min(X1+Y1, X2+Y2)
+
+// Logic:
+// Compute cost of both styles and take the smaller one.
+// If equal, either is fine (result will be the same).
+
+// Examples:
+// 10 20 9 25 → min(30, 34) = 30
+// 10 20 9 20 → min(30, 29) = 29
+// 10 20 20 10 → min(30, 30) = 30
+// 100 43 85 61 → min(143, 146) = 143
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+    
+    while (T--) {
+        int A, B, X, Y;
+        cin >> A >> B >> X >> Y;
+
+        cout << (A + B > X + Y ? (X + Y) : (A + B)) << '\n';
+    }
+    
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
