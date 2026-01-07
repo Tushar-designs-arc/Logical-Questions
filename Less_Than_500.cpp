@@ -2898,3 +2898,45 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+// 🟢 Problem 383: Chef and Wire Frames
+// Chef has a rectangular plate of length N cm and width M cm.
+// He needs to make a wireframe around the plate (perimeter).
+// Cost of wire is X rupees per cm.
+// Find the total cost for the wireframe.
+
+// Input:
+// First line: T (1 ≤ T ≤ 1000) → number of test cases
+// Next T lines: three integers N M X (1 ≤ N,M,X ≤ 1000)
+
+// Output:
+// For each test case, print the total cost = 2 * (N + M) * X
+
+// Logic:
+// Perimeter of rectangle = 2 * (length + width) = 2 * (N + M)
+// Total cost = perimeter * cost per cm = 2 * (N + M) * X
+
+// Examples:
+// 10 10 10 → 2*(10+10)*10 = 40*10 = 400
+// 23 3 12  → 2*(23+3)*12  = 52*12 = 624
+// 1000 1000 1000 → 2*(1000+1000)*1000 = 4000*1000 = 4000000
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+    
+    while (T--) {
+        int N, M, X;
+        cin >> N >> M >> X;
+
+        cout << (2 * N + 2 * M) * X << '\n';
+    }
+    
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
