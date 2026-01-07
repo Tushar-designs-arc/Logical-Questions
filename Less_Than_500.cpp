@@ -2810,3 +2810,48 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+// 🟢 Problem 376: Multivitamin Tablets
+// Doctor prescribed 3 multivitamin tablets per day for X days.
+// Total tablets needed = 3 * X
+// Chef already has Y tablets.
+// Determine if Y is enough for the full course.
+
+// Input:
+// First line: T (1 ≤ T ≤ 2000) → number of test cases
+// Next T lines: two integers X Y (1 ≤ X ≤ 100, 0 ≤ Y ≤ 1000)
+
+// Output:
+// For each test case, print "YES" if Y >= 3*X, otherwise "NO"
+// (Case-insensitive: yes, YES, YeS etc. all accepted)
+
+// Logic:
+// Required tablets = 3 * X
+// If Y >= required → YES
+// Else → NO
+
+// Examples:
+// 1 10  → 3*1=3  ≤10 → YES
+// 12 0  → 3*12=36 >0  → NO
+// 10 29 → 3*10=30 >29 → NO
+// 10 30 → 3*10=30 ≤30 → YES
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+    
+    while (T--) {
+        int X, Y;
+        cin >> X >> Y;
+
+        cout << (Y / 3 >= X ? "Yes" : "No") << '\n';
+    }
+    
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
