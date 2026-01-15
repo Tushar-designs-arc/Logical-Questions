@@ -3115,3 +3115,49 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+// 🟢 Problem 395: Donation Rewards
+// Based on blood donations X:
+// - X ≤ 3          → BRONZE
+// - 3 < X ≤ 6      → SILVER
+// - X > 6          → GOLD
+
+// Input:
+// First line: T (1 ≤ T ≤ 100) → number of test cases
+// Next T lines: one integer X (1 ≤ X ≤ 10) → number of donations
+
+// Output:
+// For each test case, print "BRONZE", "SILVER", or "GOLD"
+// (Case-insensitive: bronze, Silver, GOLD etc. all accepted)
+
+// Logic:
+// Simple if-else chain:
+//   if (X <= 3)       → BRONZE
+//   else if (X <= 6)  → SILVER
+//   else              → GOLD
+
+// Examples:
+// 1 → BRONZE
+// 3 → BRONZE
+// 5 → SILVER
+// 7 → GOLD
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+    
+    while (T--) {
+        int X;
+        cin >> X;
+
+        cout << (X <= 3 ? "BRONZE" : (X <= 6) ? "SILVER" : "GOLD") << '\n';
+    }
+    
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
