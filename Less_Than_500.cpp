@@ -2987,3 +2987,50 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+// 🟢 Problem 390: Spice Level
+// Each menu item has a spice level X (1 ≤ X ≤ 10).
+// Categorize it as:
+// - MILD    if X < 4
+// - MEDIUM  if 4 ≤ X < 7
+// - HOT     if X ≥ 7
+
+// Input:
+// First line: T (1 ≤ T ≤ 1000) → number of test cases
+// Next T lines: one integer X (1 ≤ X ≤ 10) → spice level
+
+// Output:
+// For each test case, print "MILD", "MEDIUM", or "HOT"
+// (Case-insensitive: mild, Medium, HOT etc. all accepted)
+
+// Logic:
+// Simple if-else chain:
+//   if (X < 4)        → MILD
+//   else if (X < 7)   → MEDIUM
+//   else              → HOT
+
+// Examples:
+// 4 → MEDIUM
+// 1 → MILD
+// 6 → MEDIUM
+// 9 → HOT
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+    
+    while (T--) {
+        int X;
+        cin >> X;
+
+        cout << (X < 4 ? "MILD" : ( X < 7 ? "MEDIUM" : "HOT" )) << '\n';
+    }
+    
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
