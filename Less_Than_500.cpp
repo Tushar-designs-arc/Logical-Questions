@@ -3034,3 +3034,39 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+// 🟢 Problem 390: The Gift
+// Om has X rupees personally.
+// Gymkhana fund has M rupees (Om can use any amount from it).
+// Laptop costs N rupees.
+// Determine if Om can buy the laptop using his money + any part (or all) of the fund.
+
+// Input:
+// Single line: three integers X N M (1 ≤ X,N,M ≤ 1000)
+
+// Output:
+// "YES" if Om can afford the laptop, "NO" otherwise
+// (Case-insensitive: Yes, YES, yes, yEs etc. all accepted)
+
+// Logic:
+// Total money available to Om = X + M (he can use all fund if needed)
+// He can buy the laptop if X + M >= N
+
+// Examples:
+// 5 10 15 → 5 + 15 = 20 ≥ 10 → YES
+// 4 50 
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int X, N, M;
+    cin >> X >> N >> M;
+
+    cout << (N <= X + M ? "Yes" : "No") << '\n';
+    
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
