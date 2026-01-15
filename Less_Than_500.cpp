@@ -2940,3 +2940,50 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+// 🟢 Problem 390: Minimum Coins
+// In Chefland, only two denominations exist:
+// - 1 rupee coins
+// - 10 rupee notes
+// Chef wants to pay exactly X rupees using the minimum number of coins (1 rupee).
+// Notes (10 rupees) don't count as coins.
+
+// Input:
+// First line: T (1 ≤ T ≤ 1000) → number of test cases
+// Next T lines: one integer X (1 ≤ X ≤ 1000)
+
+// Output:
+// For each test case, print the minimum number of 1-rupee coins needed.
+
+// Logic:
+// To minimize coins, maximize the use of 10-rupee notes.
+// Use as many 10s as possible → floor(X / 10) notes
+// Remaining amount = X % 10
+// This remainder must be paid entirely with 1-rupee coins.
+// → Minimum coins = X % 10
+
+// Examples:
+// 53 → 53 % 10 = 3 → 3 coins (and 5 notes)
+// 100 → 100 % 10 = 0 → 0 coins (and 10 notes)
+// 9 → 9 % 10 = 9 → 9 coins (and 0 notes)
+// 11 → 11 % 10 = 1 → 1 coin (and 1 note)
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+    
+    while (T--) {
+        int X;
+        cin >> X;
+
+        cout << X % 10 << '\n';
+    }
+    
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
