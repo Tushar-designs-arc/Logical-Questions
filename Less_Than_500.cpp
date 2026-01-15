@@ -3070,3 +3070,48 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+// 🟢 Problem 395: Reach Home
+// Chef's motorcycle can travel 5 km per litre of fuel.
+// He has X litres of fuel.
+// His home is Y km away.
+// Determine if he can reach home without running out of fuel.
+
+// Input:
+// First line: T (1 ≤ T ≤ 100) → number of test cases
+// Next T lines: two integers X Y (1 ≤ X,Y ≤ 1000)
+
+// Output:
+// For each test case, print "YES" if he can reach home, "NO" otherwise
+// (Case-insensitive: Yes, YES, yes, yEs etc. all accepted)
+
+// Logic:
+// Maximum distance he can travel = X * 5 km
+// He can reach home if X * 5 >= Y
+// → Check if 5*X >= Y
+
+// Examples:
+// 2 10 → 2*5=10 ≥10 → YES
+// 3 17 → 3*5=15 <17 → NO
+// 4 2  → 4*5=20 ≥2  → YES
+// 6 45 → 6*5=30 <45 → NO
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+    
+    while (T--) {
+        int X, Y;
+        cin >> X >> Y;
+
+        cout << (5 * X >= Y ? "Yes" : "No") << '\n';
+    }
+    
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
