@@ -3294,3 +3294,37 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+// 🟢 Problem 405: Height of Rationals
+// Given a fraction a/b in its lowest terms (a and b have no common factors),
+// the Height is defined as the maximum of the numerator and denominator.
+// Find the Height of a/b.
+
+// Input:
+// Single line: two integers a b (1 ≤ a,b ≤ 100)
+
+// Output:
+// Single integer: max(a, b)
+
+// Logic:
+// Since the fraction is already in simplest form (guaranteed by constraints),
+// simply take the maximum of a and b.
+
+// Examples:
+// 3 19 → max(3,19) = 19
+// 27 4 → max(27,4) = 27
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int A, B;
+    cin >> A >> B;
+
+    cout << (A > B ? A : B) << '\n';
+    
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
