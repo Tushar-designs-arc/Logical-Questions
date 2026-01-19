@@ -3161,3 +3161,46 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+// 🟢 Problem 398: True and False Paper
+// Exam has N true/false questions, each worth 1 mark, no negative marking.
+// Alice scored K marks → she answered K questions correctly.
+// Bob answered every question opposite to Alice.
+// Therefore, wherever Alice was correct → Bob is wrong
+// Wherever Alice was wrong → Bob is correct
+// Alice got (N - K) questions wrong → Bob gets those (N - K) correct.
+
+// Input:
+// First line: T (1 ≤ T ≤ 2000) → number of test cases
+// Next T lines: two integers N K (1 ≤ N ≤ 100, 0 ≤ K ≤ N)
+
+// Output:
+// For each test case, print Bob's score = N - K
+
+// Logic:
+// Bob's correct answers = number of questions Alice got wrong = N - K
+
+// Examples:
+// 1 1   → Bob's score = 1 - 1 = 0
+// 50 0  → Bob's score = 50 - 0 = 50
+// 100 76 → Bob's score = 100 - 76 = 24
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+    
+    while (T--) {
+        int N, K;
+        cin >> N >> K;
+
+        cout << N - K << '\n';
+    }
+    
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
