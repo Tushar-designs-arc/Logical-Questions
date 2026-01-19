@@ -3252,3 +3252,45 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+// 🟢 Problem 401: Discount
+// Toy has a fixed selling price of 100 rupees.
+// Discount of x percent is given.
+// Find the final amount Alice needs to pay.
+
+// Input:
+// First line: T (1 ≤ T ≤ 100) → number of test cases
+// Next T lines: one integer x (0 ≤ x < 100) → discount percentage
+
+// Output:
+// For each test case, print the final price = 100 - x
+
+// Logic:
+// Discount amount = x% of 100 = x rupees (since 100 * x / 100 = x)
+// Final price = original price - discount = 100 - x
+
+// Examples:
+// x=5  → 100 - 5  = 95
+// x=9  → 100 - 9  = 91
+// x=11 → 100 - 11 = 89
+// x=21 → 100 - 21 = 79
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+    
+    while (T--) {
+        int x;
+        cin >> x;
+
+        cout << 100 - x << '\n';
+    }
+    
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
