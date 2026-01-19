@@ -3204,3 +3204,51 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+// 🟢 Problem 399: The Cheaper Cab
+// Chef has two cab options:
+// - First cab: X rupees
+// - Second cab: Y rupees
+// Choose the cheaper one (or any if equal).
+
+// Input:
+// First line: T (1 ≤ T ≤ 100) → number of test cases
+// Next T lines: two integers X Y (1 ≤ X,Y ≤ 100)
+
+// Output:
+// For each test case:
+// - "FIRST"  if X < Y
+// - "SECOND" if X > Y
+// - "ANY"    if X == Y
+// (Case-insensitive: first, Second, AnY etc. all accepted)
+
+// Logic:
+// Simple comparison:
+//   if (X < Y)  → FIRST
+//   else if (X > Y) → SECOND
+//   else            → ANY
+
+// Examples:
+// 30 65 → 30 < 65 → FIRST
+// 42 42 → equal   → ANY
+// 90 50 → 90 > 50 → SECOND
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+    
+    while (T--) {
+        int X, Y;
+        cin >> X >> Y;
+
+        cout << ( X < Y ? "First" : (X > Y ? "Second" : "Any") ) << '\n';
+    }
+    
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
