@@ -3328,3 +3328,47 @@ int main() {
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
+
+// 🟢 Problem 408: Instagram
+// An Instagram account is considered spam if:
+// Following count (X) > 10 * Followers count (Y)
+// Given X (following) and Y (followers), determine if it's spam.
+
+// Input:
+// First line: T (1 ≤ T ≤ 100) → number of test cases
+// Next T lines: two integers X Y (1 ≤ X,Y ≤ 100)
+
+// Output:
+// For each test case, print "YES" if X > 10*Y, otherwise "NO"
+// (Case-insensitive: Yes, yes, yEs etc. all accepted)
+
+// Logic:
+// Check the condition X > 10 * Y
+// - If true  → YES (spam)
+// - If false → NO  (not spam)
+
+// Examples:
+// 1 10   → 1 > 100? No  → NO
+// 10 1   → 10 > 10? No  → NO
+// 11 1   → 11 > 10? Yes → YES
+// 97 7   → 97 > 70? Yes → YES
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+    
+    while (T--) {
+        int X, Y;
+        cin >> X >> Y;
+
+        cout << (X > 10 * Y ? "Yes" : "No")  << '\n';
+    }
+    
+    return 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
